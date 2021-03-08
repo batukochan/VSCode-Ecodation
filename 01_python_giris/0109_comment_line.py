@@ -1,0 +1,1 @@
+#yorum satırı olarak isimlendirilir.

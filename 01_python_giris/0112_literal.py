@@ -1,0 +1,2 @@
+#region
+#değişmez değer, sabittir.

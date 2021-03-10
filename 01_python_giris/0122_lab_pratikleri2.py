@@ -31,4 +31,3 @@ toplam=yuzler+onlar+birler
 print(a,"sayısının basamakları toplamı : {} ".format(toplam)) 
 """
 #endregion
-

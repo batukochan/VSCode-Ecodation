@@ -75,6 +75,10 @@ rad = d*pi/180
 grad = d*200/180
 print(f"Girilen derece {d} radyan cinsinden hali : {rad}, gradyan cinsinden hali : {grad} ")
 """
-#endregion
-print("github")
-print("ilk önce ctrl+S ile dosyayı kaydediyoruz.")
+#endregion ödev
+a=float(input("Bilinen açı değerini giriniz :"))
+b=float(input("Bilinen açı değerini giriniz :"))
+c=180-(a+b)
+print(f"Üçgenin birinci açısı {a}, ikinci açısı {b}'dir")
+print("-"*40)
+print(f"Bilmeyen açı değeri : {c} ")

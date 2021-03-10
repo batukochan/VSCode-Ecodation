@@ -76,3 +76,4 @@ grad = d*200/180
 print(f"Girilen derece {d} radyan cinsinden hali : {rad}, gradyan cinsinden hali : {grad} ")
 #endregion
 
+asfadas=1 

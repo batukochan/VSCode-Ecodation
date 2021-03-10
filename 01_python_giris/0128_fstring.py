@@ -7,6 +7,7 @@ print("-"*40)
 print("Girdiğiniz sayının bir fazlası : {} ".format(rakam+1))
 """
 #endregion
+
 #region fstring
 """
 rakam=int(input("Lütfen 0-9 arası bir rakam giriniz :\t"))
@@ -56,10 +57,22 @@ print("Bizleri tercih ettiğiniz için teşekkür ederiz!
                    LEYLEK)"""
 #endregion
 
-#region 
+#region örnek3
+"""
 a=10
 b=2
 print(f"{a} sayısı ile {b} sayılarının farkı {a-b}")
 print(f"{a} sayısı ile {b} sayılarının toplamı {a+b}")
 print(f"{a} sayısı ile {b} sayılarının çarpımı {a*b}")
 print(f"{a} sayısı ile {b} sayılarının bölümü {a/b}")
+"""
+#endregion
+
+#region örnek4
+d=float(input("Lütfen dönüştürülecek olan dereceyi giriniz :"))
+pi=3.14
+rad = d*pi/180
+grad = d*200/180
+print(f"Girilen derece {d} radyan cinsinden hali : {rad}, gradyan cinsinden hali : {grad} ")
+#endregion
+

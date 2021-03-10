@@ -77,3 +77,4 @@ print(f"Girilen derece {d} radyan cinsinden hali : {rad}, gradyan cinsinden hali
 """
 #endregion
 print("github")
+print("ilk önce ctrl+S ile dosyayı kaydediyoruz.")

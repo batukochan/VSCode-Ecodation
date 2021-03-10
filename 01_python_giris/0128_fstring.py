@@ -69,11 +69,11 @@ print(f"{a} sayısı ile {b} sayılarının bölümü {a/b}")
 #endregion
 
 #region örnek4
-d=float(input("Lütfen dönüştürülecek olan dereceyi giriniz :"))
+"""d=float(input("Lütfen dönüştürülecek olan dereceyi giriniz :"))
 pi=3.14
 rad = d*pi/180
 grad = d*200/180
 print(f"Girilen derece {d} radyan cinsinden hali : {rad}, gradyan cinsinden hali : {grad} ")
+"""
 #endregion
-
-asfadas=1 
+print("github")

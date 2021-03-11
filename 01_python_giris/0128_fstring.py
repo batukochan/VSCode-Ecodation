@@ -75,7 +75,9 @@ rad = d*pi/180
 grad = d*200/180
 print(f"Girilen derece {d} radyan cinsinden hali : {rad}, gradyan cinsinden hali : {grad} ")
 """
-#endregion ödev
+#endregion 
+
+#region ödev 1
 """
 a=float(input("Bilinen açı değerini giriniz :"))
 b=float(input("Bilinen açı değerini giriniz :"))
@@ -83,6 +85,10 @@ c=180-(a+b)
 print(f"Üçgenin birinci açısı {a}, ikinci açısı {b}'dir")
 print("-"*40)
 print(f"Bilmeyen açı değeri : {c} ")
+"""
+#endregion
+
+#region ödev 2
 """
 print("-"*75)
 print("\tSAĞLIK UYGULAMASINA HOŞGELDİNİZ")
@@ -93,11 +99,13 @@ print("")
 gunKal=adim*0.05
 hafKal=7*(adim*0.05)
 ayKal=30*(adim*0.05)
-print(f"""Değerli üyemiz {kullaniciAdi} günlük atmış olduğunuz ortalama {adim} adım sayesinde ;
+print(f"Değerli üyemiz {kullaniciAdi} günlük atmış olduğunuz ortalama {adim} adım sayesinde ;
 {"-"*75}
 \tGünlük yaktığınız ortalama kalori :{round(gunKal,2)} kalori
 {"-"*75}
 \tHaftalık yaktığınız ortalama kalori : {round(hafKal,2)} kalori
 {"-"*75}
-\tAylık yaktığınız ortalama kalori : {round(ayKal,2)} kalori """)
+\tAylık yaktığınız ortalama kalori : {round(ayKal,2)} kalori )
 print("-"*75)
+"""
+#endregion

@@ -89,6 +89,7 @@ print(f"Bilmeyen açı değeri : {c} ")
 #endregion
 
 #region ödev 2
+
 """
 print("-"*75)
 print("\tSAĞLIK UYGULAMASINA HOŞGELDİNİZ")
@@ -109,3 +110,4 @@ print(f"Değerli üyemiz {kullaniciAdi} günlük atmış olduğunuz ortalama {ad
 print("-"*75)
 """
 #endregion
+

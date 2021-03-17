@@ -93,4 +93,3 @@ print(f"girilen sayıların en büyüğü {eb}")
 """
 #endregion
 
-

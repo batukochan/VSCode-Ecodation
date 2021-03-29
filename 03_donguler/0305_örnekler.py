@@ -158,6 +158,7 @@ rastgele sayı üret
 kullanıcı 3 kere sayı girecek
 en yakın tahmin ekrana yazılacak
 '''
+"""
 import random
 a=random.randint(1,99)
 tahminSayisi=3
@@ -172,11 +173,6 @@ while tahmin!=a:
         fark*=-1
     if fark<ek:
         ek=fark
-
+"""
 #endregion
-
-    
-
-
-
     

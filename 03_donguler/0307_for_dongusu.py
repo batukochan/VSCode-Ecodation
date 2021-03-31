@@ -108,4 +108,5 @@ for i in range(1,min(s1,s2)+1): #güzel
 print(obeb)
 """
 
+#endregion
 

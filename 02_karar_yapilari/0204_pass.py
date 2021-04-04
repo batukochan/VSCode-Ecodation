@@ -3,6 +3,6 @@
 """
 a=int(input("Lütfen sayı giriniz : "))
 if a==0:
-    pass
+    pass #yer tutucu
 """
 #endregion

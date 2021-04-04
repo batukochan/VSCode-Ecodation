@@ -75,14 +75,3 @@ while devamMi==True:
 #endregion
 
 #region örnek 4
-
-
-
-
-
-
-
-
-    
-
-

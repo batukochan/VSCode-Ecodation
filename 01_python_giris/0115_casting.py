@@ -1,3 +1,4 @@
+#region
 """kullanıcının doğum tarihini alalım"""
 """
 print("***Yaş Hesaplama Programına Hoşgeldiniz***")
@@ -12,3 +13,13 @@ b=float(input("Lütfen uzun bilgisi veriniz : "))
 islem=a*b
 print("Kısa kenarı",a,"m olan ve uzun kenarı",b,"m olan dikdörtgenin alanı :",round(islem,2)," m^2")
 """
+"""
+a kenarı, b kenarı girilecek dörtgen için alan hesaplanacak
+int dönüşümü yapılacak
+"""
+"""
+a = int(input("lütfen dörtgenin a kenarını giriniz : "))
+b = int(input("lütfen dörtgenin b kenarını giriniz : "))
+print("dörtgenin alanı", a*b, "metre kare.")
+"""
+#endregion

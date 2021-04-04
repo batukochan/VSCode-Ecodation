@@ -30,4 +30,16 @@ birler=int((a-yuzler*100)-(onlar*10))
 toplam=yuzler+onlar+birler
 print(a,"sayısının basamakları toplamı : {} ".format(toplam)) 
 """
-#endregion
+"""
+sayi = 562
+kalan = sayi % 10
+birler = kalan // 1
+kalan = sayi % 100
+onlar = kalan // 10
+kalan = sayi % 1000
+yuzler = kalan //100
+toplamDegeri = birler + onlar + yuzler
+print(yuzler, onlar, birler)
+print(sayi, " sayısının basamakları toplamı " , toplamDegeri)
+"""
+# endregion

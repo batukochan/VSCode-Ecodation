@@ -15,15 +15,16 @@ print(5!=5 and 15>5)
 """
 #endregion
 
-#region
+#region örnek 1
 """
 a=int(input("sayı gir: "))
+# if a>0 and a<100 (diğer programlama dillerinde sıkıntı yaşamamak için tercih edilebilir.)
 if 0<a<100:
     print("sayı 100den küçüktür")
 """
 #endregion
 
-#region
+#region örnek 2
 
 '''
 4,5,6 yaşları için kurs 1e
@@ -35,12 +36,12 @@ yas=int(input("Lütfen yaşınızı giriniz: "))
 if 4<=yas and yas<=6:
     print("Kurs 1'e kayıt olabilirsiniz.")
 else:
-    print("Kurs 1'e uygun değilsin.")
+    print("Kurs 1'e uygun değilsiniz.")
 """
 
 #endregion
 
-#region örnek
+#region örnek 3
 """
 index=19
 while 18.5<index<24.99:
@@ -65,6 +66,9 @@ while 18.5<index<24.99:
     else:
         print("boyunuzu metre cinsinden yazınız örneğin : 1.84 ")
 """
+#endregion
+
+#region örnek 4
 """
 toplam = 0
 while True:
@@ -77,6 +81,9 @@ while True:
     toplam += sayi
 print(toplam)
 """
+#endregion
+
+#region örnek 5
 """
 gelir=int(input("Yıllık gelirinizi giriniz(TL): "))
 if 0<gelir<22000:
@@ -89,3 +96,5 @@ elif 49000<gelir<=180000:
     vergi=gelir*0.27
     print(F"Ödenecek tutar: {vergi} TL") 
 """
+#endregion
+

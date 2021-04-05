@@ -3,34 +3,32 @@
 sinifListesi=["Alperen","Batuhan","Kübra","Umut"]
 print(sinifListesi)
 print(type(sinifListesi))
-liste=[]
+liste=[] #boş liste çıktıaı -> []
 print(liste)
 """
 #endregion
 
-#region örnek
+#region eleman farklılığı
 """
-sayilar=[11,15,12,8.9,"ahmet","50 sayfa"] #elemanlar farklı olabilir.
-print(sayilar)
+elemanlar=[11,15,12,8.9,"ahmet","50 sayfa"] #elemanlar farklı tipte olabilir.
+print(elemanlar)
 """
 #endregion 
 
-#region örnek
+#region index bulmak
 """
-sayilar=[11,15,12,8.9,"ahmet","50 sayfa"] #elemanlar farklı olabilir.
-print(sayilar[-5])
+elemanlar=[11,15,12,8.9,"ahmet","50 sayfa"] #elemanlar farklı tipte olabilir.
+print(elemanlar[-5])
+print(elemanlar[2])
 """
 #endregion
 
 #region degistirme
 """
-sayilar=[11,15,7,12,1,0,3.14,12,13]
-sayilar[2]="yedi"
+sayilar=[11,15,7,12,1,0,3.14,12,13,15] #duplicate yani aynı elemanlar aynı listede bulunabilir.
+sayilar[2]="yedi" #index 2deki '7' elemanı yerine 'yedi' elemanı atanır.
 print(sayilar)
 """
-#endregion
-
-#region örnek
 """
 sayilar=[11,15,7,12]
 print(sayilar)
@@ -47,14 +45,14 @@ print(sayilar[len(sayilar)//2])
 """
 #endregion
 
-#region del_talimatı
+#region del talimatı
 """
 sayilar=[11,15,7,12,15]
 print(sayilar)
 del sayilar[-2]
 print(sayilar)
 print(len(sayilar))
-
+print(len(sayilar)-1) #son elemanı bize verir.
 '''
 del sayilar #intellisense dersek listeyi siler ve nameerror verir.
 '''
@@ -64,7 +62,6 @@ del sayilar #intellisense dersek listeyi siler ve nameerror verir.
 #region for döngüsü ile oku
 """
 sayilar=[11,15,7,12,1,0,3.14,15]
-
 for i in sayilar:
     if i>10:
         print(i,end=" ")

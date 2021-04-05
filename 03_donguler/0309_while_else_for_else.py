@@ -6,10 +6,10 @@ Eğer break satırı çalışarak girerse, else içerisine girmez.
 """
 i=1
 while i<=10:
-    print(i)
-    i+=1
+    print(i,end=" ")
     if i==2:
-        continue
+        pass
+    i += 1 
 else:
     print("Şuan else içerisine girdim.")
 print("While döngüsü bitti")
@@ -32,5 +32,17 @@ else:
 print("buradayım")
 """
 
+#endregion
+
+#region orderId
+"""
+searchId = 11069 # örnek olarak -1 girseydik else bloğuna girecekti.
+for orderId in range(1,100000):
+    if orderId == searchId:
+        print(f"{orderId} nolu sipariş için detay listesi")
+        break
+else:
+    print(f"{orderId} nolu sipariş için kayıt bulunamadı")
+"""
 #endregion
 

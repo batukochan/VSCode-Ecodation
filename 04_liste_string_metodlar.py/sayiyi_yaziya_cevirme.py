@@ -1,5 +1,5 @@
 #region 0-9999 arası sayıları yazıya çevirme
-"""
+"""""" 
 degerler =[
 ["","bir","iki","üç","dört","beş","altı","yedi","sekiz","dokuz"],
 ["","on","yirmi","otuz","kırk","elli","altmış","yetmiş","seksen","doksan"],
@@ -15,5 +15,5 @@ for basamak in range(int(len(donusturulenSayi)-1),-1,-1): #2,1,0
     for deger in degerler : #degerler listesinde dolaşacak
         print(f"{degerler[j][int(donusturulenSayi[i])]}",end=" ")
         break
-""" 
+
 #endregion 

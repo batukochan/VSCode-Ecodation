@@ -6,7 +6,7 @@ degerler =[
 ["","yüz","iki yüz","üç yüz","dört yüz","beş yüz","altı yüz","yedi yüz","sekiz yüz","dokuz yüz"],
 ["","bin","iki bin","üç bin","dört bin","beş bin","altı bin","yedi bin","sekiz bin","dokuz bin"]
 ]
-kullanicidenAlinanSayi = input("0-999 arası bir sayı giriniz: ") #427
+kullanicidenAlinanSayi = input("0-9999 arası bir sayı giriniz: ") #427
 donusturulenSayi= list(kullanicidenAlinanSayi) # [4,2,7] [0,1,2](index)
 i ,j= -1,int(len(donusturulenSayi)) #3
 for basamak in range(int(len(donusturulenSayi)-1),-1,-1): #2,1,0

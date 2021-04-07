@@ -158,3 +158,147 @@ Tek sayıların toplamı  : {(tekSayilarToplami):^5}
 ''')
 """
 #endregion
+
+#region clear metodu
+'''
+listedeki öğeleri silmemizi sağlar, kısacası boş liste döndürür.
+'''
+"""
+liste = ["C++","Python","JavaScript","CSS3","HTML5"]
+print("Listenin ilk hali ->",liste)
+liste.clear()
+print("Listenin son hali ->",liste)
+"""
+#endregion
+
+#region copy metodu
+'''
+Bir listeyinin elemanları kopyalamamıza yarar.
+'''
+"""
+ilkListe = ["su","maden suyu","meyve suyu"]
+ikinciListe = ["hamburger","pizza","salata","biftek"]
+print("ilkListe ilk hali",ilkListe)
+print("ikinciListe ilk hali",ikinciListe)
+ikinciListe = ilkListe.copy()
+print("ilkListe son hali",ilkListe)
+print("ikinciListe son hali",ikinciListe)
+"""
+#endregion
+
+#region  count metodu
+'''
+listenin içinde, istediğimiz herhangi bir elemanın kaç adet olduğunu
+bize döndürür.
+'''
+"""
+listem = ["rock","blues","jazz","rock"]
+sarkiSayisi = [123,234,12,1234]
+print(listem.count("rock"))
+print(sarkiSayisi.count(22))
+"""
+#endregion
+
+#region extend()
+'''
+listeleri genişletmek amacıyla kullanabşlşrz.Append fonksiyonundan temel farklı
+for döngüsüne gerek kalmadan birden fazla elemanı listeye tek seferde ekleyebiliyor
+olmamızdır.
+'''
+"""
+listem = ["rock","blues","jazz","rock"]
+print(listem)
+listem.extend(["pop","dance","ragge"])
+print(listem)
+"""
+"""
+marmaraBolgesi = ["istanbul","bursa","balıkesir","kocaeli","tekirdağ",]
+egeBolgesi = ["izmir","aydın","manisa","uşak"]
+egeMarmaraBolgesi = []
+marmaraBolgesi.extend(egeBolgesi)
+print(egeMarmaraBolgesi)
+egeMarmaraBolgesi.extend(marmaraBolgesi)
+print(egeMarmaraBolgesi)
+"""
+"""
+egeBolgesi = ["izmir","aydın","manisa","uşak"]
+egeBolgesi2 = ["denizli","afyon","manisa","balıkesir"]
+print(egeBolgesi)
+print(egeBolgesi2)
+egeBolgesi2 += (egeBolgesi)
+print(egeBolgesi2)
+"""
+#endregion
+
+#region index metodu
+
+'''
+Lİsteden bir elemana erişebilmek için index bilgisine ihtiyaç duyabiliriz.
+'''
+"""
+yazAylari = ["Haziran","Temmuz","Ağustos"]
+print("Haziran ayının index numarası",yazAylari.index("Haziran"))
+print("Haziran ayının index numarası",yazAylari.index("Temmuz"))
+print("Haziran ayının index numarası",yazAylari.index("Ağustos"))
+"""
+
+#endregion
+
+#region insert metodu
+
+'''
+atadığımız index numarasına yazdığımız bir değeri ekler.
+'''
+"""
+notlarım = ["Vize : 97","İkinci Vize : 45","Final : 67"]
+print(notlarım)
+notlarım.insert(1,"lab : 77")
+print(notlarım)
+"""
+
+#endregion
+
+#region pop metodu
+'''
+son elemanı siler
+'''
+"""
+sayilar = [1,2,3,4,5,6]
+print("ilk hal",sayilar)
+print("silinen değer",sayilar.pop())
+print(sayilar)
+"""
+'''
+parametre alırsa aldığı indexteki elemanı siler.
+'''
+"""
+sayilar = [1,2,3,4,5,6]
+print("ilk hal",sayilar)
+print("silinen değer",sayilar.pop(3))
+print(sayilar)
+"""
+#endregion
+
+#region remove()
+"""
+sayilar = [1,2,3,4,5,6]
+print("ilk hal",sayilar)
+sayilar.remove(2) #2 elemanını sildi.
+print("son hal",sayilar)
+listem = ["rock","blues","jazz","rock"]
+listem.remove("jazz")
+print(listem)
+""" 
+#endregion
+
+#region reverse() sort()
+"""
+sayilar = [1,2,3,4,5,6]
+print("ilk hal",sayilar)
+sayilar.reverse()
+print(sayilar)
+isimler = ["rock","metal","anadolur ock","pop","r&b","rap"]
+isimler.sort()
+print(isimler)
+"""
+#endregion

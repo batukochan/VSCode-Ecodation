@@ -41,6 +41,3 @@ favoriAy = []
     print(favoriAy)
 """
 #endregion
-
-#region 
-

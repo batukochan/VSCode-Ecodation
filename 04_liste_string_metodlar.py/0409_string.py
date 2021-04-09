@@ -1,4 +1,3 @@
-#region 
 """
 ad = "batuhan"
 print(ad[0])
@@ -15,5 +14,3 @@ for i in range(0,len(ad)):
     if ad[i] not in sesliHarf:
         print(ad[i],end="")
 """
-
-

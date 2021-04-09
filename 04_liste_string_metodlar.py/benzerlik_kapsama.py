@@ -25,14 +25,75 @@ if ornekDeger is None :
 #endregion
 
 #region
-
+"""
 def greetUser(isim: str, soyisim: str, mesaj: str="Eve Hoş Geldin!"):
     print(f"Merhaba {isim} {soyisim}")
     if mesaj is not None: #mesaj none değilse işleme gir!
         print({mesaj})
 greetUser("batu","koçhan",None)
-
+"""
 '''
 is
 is  not gibi ifadeler kimlikleri karşılaştırır.
 '''
+#endregion
+
+#region kapsama alanı
+"""
+def greet(name): 
+    message = "a" #lokal değişkenler
+'''
+print(message) 
+nameError hatası verir
+'''
+"""
+
+#--------------------------------
+
+""" 
+message = "c" #globaldir
+def greet(name):
+    message = "a"
+
+def greet(name):
+    message = "b" 
+
+print(message) # c global değer olduğu için çıktımız c olur.
+'''
+   Eğer global değişkenini fonksiyon içinde tanımlasaydık (tavsiye edilmez.)
+donksiyonun içindeki değişken değeri diğer kod satılarını da etkileyecektir.
+'''
+"""
+#endregion
+
+#region import
+"""
+from random import choice, randint
+karakter = "abcdefghijklmnoprstu0123456789"
+parola = ""
+for i in range(randint(4,12)):
+    parola += choice(karakter)
+print(parola)
+"""
+#endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

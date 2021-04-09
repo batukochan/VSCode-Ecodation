@@ -43,7 +43,7 @@ else:
 """
 #endregion
 
-#regipon 
+#region 
 '''
 tekrarsız liste
 '''

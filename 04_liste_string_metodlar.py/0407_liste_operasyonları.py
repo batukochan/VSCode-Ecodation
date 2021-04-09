@@ -52,9 +52,3 @@ else:
     print(f"İnternet adresi -> {url}")
 '''
 #endregion
-
-#region örnek
-
-
-
-

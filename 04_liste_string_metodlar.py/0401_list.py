@@ -76,6 +76,7 @@ for i in sayilar:
     toplam+=i
 print(f"Listedeki elemanların toplamı {toplam}")
 """
+#endregion
 
 #region sort-reverse
 """

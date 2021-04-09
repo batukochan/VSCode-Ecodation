@@ -32,12 +32,3 @@ yuzler = ["","yüz","iki yüz","üç yüz","dört yüz","beş yüz","altı yüz"
 # 123 -> 1 2 3 
 """
 #endregion
-
-
-
-
-
-
-
-
-

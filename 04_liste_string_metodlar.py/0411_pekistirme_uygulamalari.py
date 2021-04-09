@@ -24,4 +24,3 @@ for i in liste2:
 print(tekrarsizListe)
 """
 #endregion
-

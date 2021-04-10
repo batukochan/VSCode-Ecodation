@@ -488,3 +488,57 @@ kalan = lambda bolunen,bolen: bolunen % bolen
 print( kalan(18,4))
 """
 #endregion
+
+#region taban üs son 3 basamak
+"""
+def hesapla(taban,us):
+    sonuc = taban**us
+    son = int(input("Son kaç basamak: "))
+    print(str(sonuc)[-son:])
+x=int(input("Taban: "))
+y=int(input("üs: "))
+hesapla(x,y)
+"""
+#endregion
+
+#region 
+'''
+iki parametreli bir fon oluşturulacak
+iki ifade alınacak ve bu ifadeler birleştirilecek
+birleştirilen iki iadenin baş harfleri büyük olacak
+örn ahmtet mehmet
+    Ahmet Mehmet
+'''
+"""
+def birlestir(st1,st2):
+    return f'''
+{(st1.capitalize())}-{(st2.capitalize())}
+    '''
+
+st = birlestir(input("İfade 1 : "), input("İfade 2: "))
+print(st)
+"""
+#endregion
+
+#region ortak karakter
+"""
+def degerGetir():
+    d1 = input("Değer 1: ")
+    d2 = input("Değer 2: ")
+    return d1,d2
+
+def kontrolEt(ifade1,ifade2):
+    sayac = 0
+    kontroListesi = []
+    for i in ifade1:
+        for j in ifade2:
+            if i not in kontroListesi:
+                if j == i:
+                    kontroListesi.append(j)
+                    sayac += 1
+    print(sayac)
+
+d1,d2= degerGetir()
+kontrolEt(d1,d2)
+"""
+#endregion

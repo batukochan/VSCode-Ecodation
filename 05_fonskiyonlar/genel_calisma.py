@@ -342,5 +342,164 @@ def mutlakDeger(a):
 
 print(mutlakDeger(-3))
 """
+#endregion
+
+#region türkçe karakter içeriyor mu ?
+"""
+turkceKarakter = ["ğ","Ğ","ç","Ç","ş","Ş","ü","Ü","ö","Ö","ı","İ"]
+def kontrol(kelime: str):
+    for i in turkceKarakter:
+        if i in kelime:
+            return True
+
+kelime = str(input('''
+    Sorgulamak istediğiniz kelimeyi giriniz...
+    Kelime: '''))
+if kontrol(kelime):
+    print(f'''
+    {kelime}, türkçe karakter içeriyor''')
+else:
+    print(f'''
+    {kelime}, türkçe karakter içermiyor''')
+
+"""
+#endregion
+
+#region tek cift ortalama
+'''
+klavyeden girilen başlangıç ve bitiş aralığındaki sayıların 
+çift ve tek olanların ayrı ayrı oralamasını alıp ekrena yazan
+program
+not: tek, çift sayı kontrollü fonksiyonb içinde yapılacaktır
+'''
+"""
+def Tekcifttop(baslangic,bitis,artis):
+    ciftToplam,tekToplam = 0,0
+    tekSay,ciftSay=0,0
+    for i in range(baslangic,bitis+1,artis):
+        if i % 2 == 0:
+            ciftToplam += i
+            ciftSay += 1
+        else:
+            tekToplam +=i
+            tekSay += 1
+    return f'''
+    Tek sayıların ortalaması {tekToplam/tekSay} 
+    Çift sayıların ortalaması {ciftToplam/ciftSay}
+    '''
+print(Tekcifttop(1,100,5))
+"""
+#endregion
+
+#region tam bölünen
+
+'''
+klavyeden girilen satının tam bölenlerini bulup ekrana yazdıran program
+NOt: Sayının tam bölenlerini bulma işlemi klavyeden yapılacak.
+'''
+"""
+def tambolenler(sayi):
+    tambolenler = []
+    for i in range(1,sayi+1):
+        if sayi % i == 0:
+            tambolenler.append(i)
+    return tambolenler
+print(tambolenler(12))
+"""
+
+#endregion
+
+#region varsayılan değer atama
+"""
+def calisanlar(ad:str,soyad:str,sehir="bilgi yok",deneyim="bilgi yok"):
+    print(f'''
+    Kayıt yapılıyor...
+    İsim: {ad}
+    Soyad: {soyad}
+    sehir: {sehir}
+    deneyim: {deneyim}
+    ''')
+calisanlar("batu","koçhan")
+#varsayılan değer ataması yapılacak parametreler sonda bırakılmalıdır.
+"""
+#endregion
+
+#region Yerel (local) değişken
+
+'''
+    Python'da fonksiyonlarda tanımlanan değişkenler yerel değişkenlerdir.Bir fonksiyon 
+bloğunda oluşturulan bir değişken varsa o değişken o fonksiyona özeldir.Yani o değişen 
+fonksiyon dışında kullanılmaya kalkılırsa, program değişkeni bulamaz.Bunun sebebi program 
+fonksiyondan çıktıktan sonra garbage collector tarafından o değişkeninRAM'den siliniyor 
+olmasıdır.
+'''
+"""
+sayi = 12
+def fonksiyon():
+    sayi = 24
+    print(sayi)
+
+fonksiyon() # 24 
+print(sayi) # 12 yazdırılır çünkü fonksiyon içindeki sayi değişkeni silinir.
+"""
+"""
+sayi = 12
+def fonksiyon():
+    print(sayi)
+
+def fonksiyon2():
+    print(sayi)
+
+fonksiyon()
+fonksiyon2()
+print(sayi)
+'''
+    a değişkeni 12 atanmıştır ve her yerde kullanılmıştır. Fonksiyonlar içinde 
+farklı bir değerde a değişkeni atansaydı, bir önceki örnekteki gibi bir çıktı 
+alacaktık.
+'''
+"""
+#endregion
+
+#region Global değişken
+"""
+sayi = 12
+def fonk():
+    global sayi
+    sayi = 34
+    print(sayi)
+fonk()
+print(sayi)
+'''
+    fonksiyondaki sayi değeri global olduğu için diğer sayi parametresinin de adresi 
+aynı oldu.Bu sebeple ikisin de değeri fonksiyonun içindeki global değişken değerine 
+eşitlendi.
+'''
+"""
+#endregion
+
+#region Lambda
+"""
+topla = lambda a,b:a+b
+print(topla(2,4))
+"""
+"""
+kalan = lambda bolunen,bolen: bolunen % bolen
+print( kalan(18,4))
+"""
+#endregion
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

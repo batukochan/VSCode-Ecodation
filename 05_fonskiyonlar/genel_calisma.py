@@ -488,18 +488,3 @@ kalan = lambda bolunen,bolen: bolunen % bolen
 print( kalan(18,4))
 """
 #endregion
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

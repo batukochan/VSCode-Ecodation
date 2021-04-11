@@ -542,3 +542,41 @@ d1,d2= degerGetir()
 kontrolEt(d1,d2)
 """
 #endregion
+
+#region ortalama
+"""
+def ortalama(a,b,c):
+    return (a+b+c)/3
+
+print(ortalama(1,2,3))
+"""
+#endregion
+
+#region değişken uzunluğunda parametre gönderme
+"""
+def ortalama(*liste):
+    return sum(liste)/ len(liste)
+
+print(ortalama(1,2,3,8,1231,233,-32))
+"""
+#endregion
+
+#region
+"""
+def karesi(*liste):
+    donusLİstesi = []
+    for i in liste:
+        donusLİstesi.append(i**2)
+    return donusLİstesi
+
+print(karesi(2,4,8))
+"""
+#endregion
+
+#Rregion
+
+
+
+
+
+

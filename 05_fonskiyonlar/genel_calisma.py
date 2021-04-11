@@ -600,3 +600,18 @@ def topla(n):
 print(topla(5))
 """
 #endregion
+
+#region rekursive örnek
+
+'''
+5*5 + 5*4 + 5*3 + 5*2 + 5*1
+'''
+"""
+def topla(n):
+    if n<=1:
+        return n
+    return pow(n,n) + topla(n-1) #pow() üssü
+
+print(topla(5))
+"""
+#endregion

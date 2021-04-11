@@ -573,10 +573,30 @@ print(karesi(2,4,8))
 """
 #endregion
 
-#Rregion
+#region dec to bin
+"""
+def dectobin(arg):
+    kalan , bin =0 , ""
+    while arg > 1:
+        kalan = arg % 2 
+        arg =  arg // 2
+        bin = str(kalan) + bin
+    print(str(arg) + bin)
 
+dec = int(input("Lütfen dec-bin dönüşümü için bir değer giriniz: "))
+dectobin(dec)
+"""
+#endregion
 
+#region rekursive fonksiyon
+"""
+def topla(n):
+    if n<=0:
+        return "Pozitif değer olmalı"
+    if n<=1:
+        return n
+    return n + topla(n-1)
 
-
-
-
+print(topla(5))
+"""
+#endregion

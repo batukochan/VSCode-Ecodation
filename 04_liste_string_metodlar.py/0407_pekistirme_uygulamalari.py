@@ -32,3 +32,24 @@ yuzler = ["","yüz","iki yüz","üç yüz","dört yüz","beş yüz","altı yüz"
 # 123 -> 1 2 3 
 """
 #endregion
+
+#Rregion sıralama
+"""
+listem = [9, 7, 5, 1, 3, 4, 2, 6, 8]
+while True:
+    sirali = True
+    for i in range(len(listem)-1):
+        if listem[i]>listem[i+1]:
+            listem[i], listem[i+1] = listem[i+1], listem[i]
+            sirali = False
+    if sirali:
+        break
+print(listem)
+"""
+"""
+listem = [9, 7, 5, 1, 3, 4, 2, 6, 8]
+listem.sort()
+print(listem)
+listem.sort(reverse = True)
+print(listem)
+"""

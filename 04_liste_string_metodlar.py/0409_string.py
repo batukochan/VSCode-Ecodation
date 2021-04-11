@@ -29,3 +29,11 @@ for i in range(0,len(ad)):
         print(ad[i],end="")
 """
 #endregion
+
+# region ismi_tersten_yazma_ornegi
+"""
+ad = "BATUHAN"
+for i in range(len(ad)-1, -1, -1):
+    print(ad[i], end= " ")
+"""
+# endregion

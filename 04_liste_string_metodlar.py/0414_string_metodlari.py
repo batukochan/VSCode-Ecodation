@@ -9,3 +9,12 @@ isalphaum() issapace() istitle() isidentifier()
 split() index() format()
 '''
 #endregion
+
+#region
+"""
+yabanciDil = {
+    "dil" : "ingilizce",
+    "seviye" : "B1"
+}
+"""
+#endregion

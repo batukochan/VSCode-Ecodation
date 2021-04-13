@@ -62,6 +62,7 @@ meyveler = ["elma","armut","muz","ayva,","üzüm"]
 print(f"listemizdeki meyveler ilk hal: {meyveler}")
 meyveler.pop()
 print(f"listemizdeki meyveler son hal: {meyveler}")
+meyveler.pop(3) #3. index yani ayva elemanını siler
 """
 '''
 sebzeler = []

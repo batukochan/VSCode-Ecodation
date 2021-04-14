@@ -14,8 +14,6 @@ print("Mürşit", "ilimdir")
 #region sep
 #separator = ayırıcı
 
-
-
 print("Python","Eğitim","Klavuzu") #sep parametresi arkaplanda sep=" " olarak çalışır.
 
 print("Python","Eğitim","Klavuzu", sep=" ")

@@ -72,6 +72,7 @@ while True:
 isim-soyisim-vize-final
 not ortalamalarına göre sıralama
 '''
+"""
 ortalamalar = []
 while True:
     ogrenciİsimSoyisim = input('''
@@ -97,8 +98,17 @@ for j in ortalamalar:
     if j<mini:
         mini=j
 print(f"en düşük not {mini}, en yüksek not {maxi}")
+"""
+#endregion
 
-
+#region iki bsamaklı sayıyı yazıya çevirme
+"""
+birler = ["", "bir", "iki", "üç", "dört", "beş", "altı", "yedi", "sekiz", "dokuz"]
+onlar = ["", "on", "yirmi", "otuz", "kırk", "elli", "altmış", "yetmiş", "seksen", "doksan"]
+sayi = 92
+print(f"{onlar[sayi//10]} {birler[sayi%10]}")
+"""
+#endregion
 
 
 

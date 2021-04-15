@@ -33,7 +33,7 @@ for i in ogrenciler:
 # endregion
 
 # region ornek_3
-"""
+""" 
 ogrenci1 = [
     "Alp",
     "Besi",

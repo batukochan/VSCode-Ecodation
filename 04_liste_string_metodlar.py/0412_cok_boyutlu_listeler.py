@@ -34,7 +34,7 @@ Bil.No  Cihaz Adı       CPU     PID
 2       Guest101        %60     excel.exe
 3       Kat-1_Laptop    %90     camtasia.exe, chrome.exe
 '''
-"""
+""" 
 kurumBilgisayarlari=[
     [1, "Kat1-PC", 45, "chrome.exe"], 
     [2, "Desktop-Lab1", 90, "chrome.exe, camtasia.exe"], 

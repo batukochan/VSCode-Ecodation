@@ -16,6 +16,18 @@ print(kurum[3]) #x
 """
 # endregion
 
+#region ismi tersten yazdırma
+"""
+ad = "Batuhan"
+print(ad.lower()[::-1])
+"""
+"""
+ad = "Batuhan"
+for i in range(len(ad)-1,-1,-1):
+    print(ad.upper()[i],end=" ")
+"""
+#endregion
+
 #region sesli sessiz harf
 """ 
 meyveler = ["elma","armut","muz","ayva","üzüm","elma"]

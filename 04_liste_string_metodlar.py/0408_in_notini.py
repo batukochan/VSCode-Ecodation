@@ -2,8 +2,10 @@
 """
 → List index metodu: Liste elemanlarında arama yapar. 
 Bulduğu anda index’i geriye döndürür. Ancak bulamadığı anda value error fırlatılır. 
+
 → List count medodu: Tam olarak arama özelinde bir metod değildir. 
 Parametre ile gönderilen değerin, listede kaç adet olduğunu geriye döndürdüğü için 
+
 dolaylı şekilde arama sürecine dahil edilebilir. Geriye sıfır döndüğünde bulamadığı anlaşılır.
 → In / Not In : bir diğer arama metodudur. Kullanımı oldukça basittir.
 """

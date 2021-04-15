@@ -1,5 +1,6 @@
 #region tek satırda for
 """
+
 liste = []
 for i in range(1,9):
     liste.append(i)
@@ -7,8 +8,8 @@ print(liste)
 
 liste = [i for i in range(1,9)]
 print(liste)
-"""
 
+"""
 #endregion
 
 #region

@@ -17,6 +17,7 @@ print(ortakElemanlar)
 liste1 = [1,2,3,4,5]
 liste2 = [4,5,6,7,8]
 tekrarsizListe = liste1.copy()
+print(liste1)
 for i in liste2:
     print(i)
     if i not in tekrarsizListe:

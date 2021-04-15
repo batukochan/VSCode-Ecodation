@@ -1,4 +1,4 @@
-#region giriş
+#region iterable
 """
 ad = "batuhan"
 print(ad[0]) #0. indexte yer alan b harfini bastırır.

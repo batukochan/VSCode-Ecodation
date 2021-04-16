@@ -1,17 +1,26 @@
 #region concat birleştirme
 """
-okulN=348165
-ad= "batu"
-soyad="koçhan"
-sınav_notu=58
-print("Okul numarası", okulN,"olan", ad,soyad,"isimli öğrencinin","- Final Notu : ",sınav_notu)
+okulNumarasi = 123456
+ad = "Zeynel"
+soyad = "Şira"
+sınav_notu = 58
+print("Okul numarası", okulNumarasi,"olan", ad,soyad,"isimli öğrencinin","- Final Notu : ",sınav_notu)
+# Çıktımız → Okul numarası 123456 olan Zeynel Şira isimli öğrencinin - Final Notu :  58
 """
+#endregion 
+
 #windows versiyonu 10, python versiyonu 3.9.2
 """
-prDili="python versiyon 3.9.2"
-isletimSis="windows versiyon 10"
-print(isletimSis,prDili)
+programlamaDili = "python versiyon 3.9.2"
+isletimSistemi = "windows versiyon 10"
+print(
+isletimSistemi + " " + programlamaDili 
+) 
+# Çıktımız → windows versiyon 10 python versiyon 3.9.2
 """
+#endregion
+
+#region
 """
 il="İstanbul"
 ülke="Danimarka"
@@ -23,5 +32,5 @@ egitmen="Aziz"
 aNumara=40
 print(egitmen,"hacamızın ayakkabı numarası",aNumara,"numaradır.")
 """
-
+#endregion
 

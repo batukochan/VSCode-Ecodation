@@ -8,21 +8,24 @@ print(name)
 #endregion
 
 #region notation
+
+#camelCase
 """
-#camel casing
 okulNumarasi = 1243
 ad = "ahmet"
 soyad = "talan"
 sinavNotu = 97
 print(okulNumarasi, ad, soyad, sinavNotu)
+''' çıktı → 1243 ahmet talan 97 '''
 """
+#Snake_case 
 """
-#undercore casing
 okul_numarasi = 1234
 ad = "mehmet"
 soyad = "yalı"
 sinav_notu = 32
 print(okul_numarasi, ad, soyad, sinav_notu)
+''' çıktı → 1234 mehmet yalı 32 '''
 """
 #endregion
 

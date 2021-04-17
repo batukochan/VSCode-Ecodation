@@ -75,3 +75,4 @@ sayilar = [1,3,4,5,7,8,11,14]
 sonHali = list(filter(lambda a: a%2 == 0,sayilar))
 print(sonHali)
 """
+#endregion

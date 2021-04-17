@@ -7,4 +7,5 @@ carp(4,2)
 carp(4,2,7)
 carp(4,2,5,8)
 
-def bilgiler(tc="Bu alan zorunludur.",ad="isimsiz",)
+def bilgiler(tc="Bu alan zorunludur.",ad="isimsiz",):
+    pass

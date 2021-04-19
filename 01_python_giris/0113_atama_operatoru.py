@@ -1,12 +1,25 @@
 #region değişken kavramı
-"""
-kg=76
-boy=1.65
-vki=kg/(boy**2)
-print("Girdiniğiniz bilgilere göre vücut kitle indeksiniz : ", round(vki,2))
-"""
 
-  
+hastaAdi = input("Lütfen adınızı ve soyadınızı giriniz : ")
+
+kg = int(input("Lütfen kilonuzu giriniz : "))
+
+boy = float(input('''
+Lütfen boyunuzu metre cinsinden giriniz, ör. '1.84'
+Boyunuz:
+'''))
+
+vki=kg/(boy**2)
+
+print(f'''
+Hastanız {hastaAdi}
+Kilosu {kg} kg
+Boyu {boy} mt.
+Girilen bilgilere göre vücut kitle indeksi : {round(vki,2)}
+''')
+
+#endregion
+
 #region atama_operatoru
 """
 name = "Jhon"
@@ -52,3 +65,11 @@ sayi = sayi + 1
 toplam = toplam + sayi
 """
 #endregion
+
+
+print(round(123.243426325)) # sayıyı yuvarlar.
+# çıktımız → 123
+print(round(123.243426325,3)) # virgülden sonra 3 haneyi  alır
+# çıktımız → 123.243
+print(round(123.243426325,2)) # virgülden sonra 2 haneyi  alır
+# çıktımız → 123.24

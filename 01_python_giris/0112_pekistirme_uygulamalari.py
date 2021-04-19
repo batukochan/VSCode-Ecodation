@@ -43,3 +43,14 @@ print(yuzler, onlar, birler)
 print(sayi, " sayısının basamakları toplamı " , toplamDegeri)
 """
 # endregion
+
+
+#region input giriş
+
+'''Örneğimizde kullanıcıdan yaşını isteyelim 
+ve yaşı çıktı olarak alalım. '''
+
+yas = int(input("Lütfen yaşınızı giriniz: "))
+print(f"Yaşınız → {yas}")
+
+#endregion

@@ -1,3 +1,4 @@
+"""
 def listeyeCevir(*params):
     liste = []
     for param in params:
@@ -6,3 +7,4 @@ def listeyeCevir(*params):
     
 result = listeyeCevir(10,20,30,'Merhaba')
 print(result)
+"""

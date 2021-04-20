@@ -1,8 +1,8 @@
-  
 # region ornek
 """
 Tam bölünüp/bölünmediğini bulalım
 Int kontrolü yapalım
+"""
 """
 s1 = input("Lütfen Sayı Giriniz: ")
 s2 = input("Lütfen Sayı Giriniz: ")
@@ -14,4 +14,5 @@ if s1.isdigit() and s2.isdigit():
         print("tam bölünemez")
 else:
     print("lütfen sayısal değer giriniz")
+"""
 # endregion

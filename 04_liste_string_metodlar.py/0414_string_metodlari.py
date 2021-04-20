@@ -14,15 +14,15 @@ split() index() format()
 """
 #object
 print(type(3))
-kurum = "Ecodation Eğitim Kurumları"
-yas = 34
+kurum = "Flux Mimarlık "
+boy = 184
 """
 # endregion
 
 # region upper
 """
-büyük harfe çevirir
-kurum = "Ecodation Eğitim Kurumları"
+'''her karakteri büyük harfe çevirir'''
+kurum = "Flux Mimarlık"
 print(kurum.upper())
 """
 # endregion
@@ -41,47 +41,56 @@ while True:
 
 # region title
 """
-tüm kelimelerin yalnızca ilk harfleri büyük yazılır.
-kurum = "ecodation eğitim kurumlarıııı"
+'''tüm kelimelerin yalnızca ilk harfleri büyük yazılır.'''
+kurum = "flux mimarlık ofisi"
 print(kurum.title())
 """
 # endregion
 
 # region capitalize
 """
-sadece ilk harf büyük, diğer tüm harfler küçük yazılır.
-kurum = "Ecodation Eğitim Kurumları"
+'''sadece ilk harf büyük, diğer tüm harfler küçük yazılır.'''
+kurum = "Flux Mimarlık Ofisi"
 print(kurum.capitalize())
 """
 # endregion
 
 # region count
 """
-parametrede belirttiğim harf, kelime neyse, string içinde kaç tane geçtiğini bulur.
-kurum = "Ecodation Eğitim Kurumları"
-print(kurum.count(("z")))
-print(kurum.count("i", 6, 8))
+'''parametrede belirttiğim harf, kelime string içinde kaç tane geçtiğini bulur.'''
+kurum = "Flux Mimarlık ofisi"
+print(kurum.count(("z"))) #verinin tamamında 'z' arar.
+# çıktımız → 0
+print(kurum.count("a", 6, 8)) #6.-8. index arasında 'i' arar. 8 dahil değil
+# çıktımız → 0
+print(kurum.count("a", 6, 9)) #6.-8. index arasında 'i' arar. 9 dahil değil
+# çıktımız → 1
 """
 # endregion
 
 # region replace
+
 """
-bir metni, başka bir metin ile değiştirir.
-url = "http://www.ecodation.com.tr"
-url.replace("com.tr", "edu.tr")
-print(url)
+'''bir metni, başka bir metin ile değiştirir.'''
+url = "http://www.flux.com.tr"
+url.replace("com.tr", "edu.tr") 
+'''Ramde anlık olarak değişir ancak url değişkenini çağırırsak orjinal metin basılır'''
+print(url) #orjinal halini basar
 url = url.replace("com.tr", "edu.tr")
 print(url)
 yorum = "bu kelime sansürlenecek"
 print(yorum.replace("sansürlenecek", "..."))
 print(yorum)
 """
+
 # endregion
 
 # region swapcase
 """
+'''
 Büyük karakterler küçük, küçük karakterler büyük olacak.
-kurum  = "Ecodation Eğitim Kurumları"
+'''
+kurum  = "Türk Dil Kurumu"
 print(kurum)
 print(kurum.swapcase())
 """
@@ -89,16 +98,21 @@ print(kurum.swapcase())
 
 # region endswith
 """
-endswith; eğer parametre ile belirttiğiniz haliyle bitiyorsa True, aksi takdirde False değeri döndürür.
-url = "http://www.ecodation.com.tr"
+'''
+endswith; eğer parametre ile belirttiğiniz haliyle bitiyorsa True, 
+aksi takdirde False değeri döndürür.
+'''
+url = "http://www.flux.com.tr"
 print(url.endswith("com.tr"))
+'''bu yapıyı karar işlemlerimizde kullanabilir'''
 """
 # endregion
 
 # region startswith
 """
-startswith; eğer parametre ile belirttiğiniz haliyle başlıyorsa True, aksi takdirde False değeri döndürür.
-url = "http://www.ecodation.com.tr"
+'''startswith; eğer parametre ile belirttiğiniz haliyle başlıyorsa True, 
+aksi takdirde False değeri döndürür.'''
+url = "http://www.flux.com.tr"
 print(url.startswith("http"))
 print(url[0:4]=="http")
 """
@@ -106,8 +120,8 @@ print(url[0:4]=="http")
 
 # region strip
 """
-strip; ile başındaki sonundaki boşlukları almayı başaracağız.
-kurum  = "        Ecodation Eğitim Kurumları         "
+'''strip; ile başındaki sonundaki boşlukları almayı başaracağız.'''
+kurum  = "        Flux Mimarlık Ofisi         "
 print(kurum)
 print(kurum.strip())
 """
@@ -115,8 +129,8 @@ print(kurum.strip())
 
 # region lstrip
 """
-lstrip; string değerin başındaki boşlukları alır.
-kurum  = "        Ecodation Eğitim Kurumları"
+'''lstrip; string değerin başındaki boşlukları alır.'''
+kurum  = "        Flux Mimarlık Ofisi"
 print(kurum)
 print(kurum.lstrip())
 """
@@ -125,7 +139,7 @@ print(kurum.lstrip())
 # region rstrip
 """
 rstrip; string değerin sonundaki boşlukları alır.
-kurum  = "Ecodation Eğitim Kurumları       "
+kurum  = "Flux Mimarlık Ofisi       "
 print(kurum)
 print(kurum.rstrip())
 """
@@ -133,8 +147,9 @@ print(kurum.rstrip())
 
 # region isdigit
 """
-rakam olup/olmadığını geriye döndürür. Eğer değer bir sayı ise, tüm rakamlarını kontrol ederek 
-True/False geriye döndürecek.
+'''rakam olup/olmadığını geriye döndürür. 
+Eğer değer bir sayı ise, tüm rakamlarını kontrol ederek 
+True/False geriye döndürecek.'''
 deger = "1"
 print(deger.isdigit())
 deger = "1060"
@@ -146,39 +161,39 @@ sayi = int(input("lütfen s. giriniz: "))
 
 # region isalpha
 """
-hepsi harf ise True, değilse False döner. Girilen değerlerin harf olup olmadığını sorgular.
-deger = "nciSınıf"
+'''hepsi harf ise True, değilse False döner. Girilen değerlerin harf olup olmadığını sorgular.'''
+deger = "nciS3ınıf" #içerisinde sayısal değer barındırmamalı, barındırırsa false döner.
 print(deger.isalpha())
 """
 # endregion
 
 # region isalnum
 """
-alfanumerik ise True, değilse False döner.
-deger = "1nciSınıf"
+'''alfanumerik ise True, değilse False döner.'''
+deger = "1nciSınıf" #a-z,A-Z,0-9 içerebilir.
 print(deger.isalnum())
 """
 # endregion
 
 # region isupper
 """
-tamamı büyük karakterlerden mi oluşuyor? 
-kurum = "ECODATION"
+'''tamamı büyük karakterlerden mi oluşuyor? '''
+kurum = "FLUX"
 print(kurum.isupper())
 """
 # endregion
 
 # region islower
 """
-tamamı küçük karakterlerden mi oluşuyor? 
-kurum = "ECODATIoN"
+'''tamamı küçük karakterlerden mi oluşuyor? '''
+kurum = "fLuX"
 print(kurum.islower())
 """
 # endregion
 
 # region isspace
 """
-tamamı space mi doğrulamak için kullanılır.
+'''tamamı space mi doğrulamak için kullanılır.'''
 kurum = "     "
 print(kurum.isspace())
 """
@@ -186,15 +201,15 @@ print(kurum.isspace())
 
 # region istitle
 """
-ilk harfleri büyük mü doğrulamak için kullanılır. 
-deger = "Ecodation Eğitim kurumları"
+'''ilk harfleri büyük mü doğrulamak için kullanılır. '''
+deger = "Flux"
 print(deger.istitle())
 """
 # endregion
 
 # region isidentifier
 """
-parametre ile belirtilen değer, değişken ismi olur mu olmaz mı doğrulamak için kullanılır.
+'''parametre ile belirtilen değer, değişken ismi olur mu olmaz mı doğrulamak için kullanılır.'''
 deger = "_1Sayi"
 print(deger.isidentifier())
 """
@@ -202,14 +217,15 @@ print(deger.isidentifier())
 
 # region split
 """
-parametre ile belirtilen değer, değişken ismi olur mu olmaz mı doğrulamak için kullanılır.
-kurum  = "Ecodation Eğitim Kurumları"
+'''parametre ile belirtilen değer, değişken ismi olur mu olmaz mı doğrulamak için kullanılır.'''
+kurum  = "Flux Mimarlık Ofisi"
 print(kurum.split())
-kurum1  = "Ecodation Eğitim Kurumları. Python Kursuna Hoş Geldiniz"
+kurum1  = "Flux Mimarlık Ofisi ile Geleceğin Yapılarını Tasarla "
 print(kurum1.split("."))
 cumleSayisi = len(kurum1.split("."))
 print(cumleSayisi)
-kurum  = "Ecodation Eğitim Kurumları. Python Kursuna Hoş Geldiniz"
+kurum  = "Flux Mimarlık Ofisi ile Geleceğin Yapılarını Tasarla"
+listem = [i for i in kurum.split(" ")]
 listem = [i for i in kurum.split(".")]
 print(listem)
 """
@@ -217,8 +233,8 @@ print(listem)
 
 # region ic_ice_kullanim
 """
-kurum  = "Ecodation Eğitim Kurumları"
-print(len(kurum.lower().upper().title().replace("ğ", "g")))
+kurum  = "Flux Mimarlık Ofisi"
+print(len(kurum.lower().upper().title().replace("i", "ı")))
 """
 # endregion
 

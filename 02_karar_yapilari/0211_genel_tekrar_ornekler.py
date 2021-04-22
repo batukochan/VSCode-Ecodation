@@ -1,4 +1,4 @@
-#region If-Then
+# region If-Then
 
 """ karşılaştırma operatörleri
 eşittir ==
@@ -8,7 +8,7 @@ büyüktür >
 küçük eşit <=
 büyülk eşit >= """
 
-#indent kavramı tab tuşu ile yapılır
+# indent kavramı tab tuşu ile yapılır
 """
 havaD="yağmurlu"
 if havaD == "yağmurlu" :
@@ -38,9 +38,9 @@ if dil=="ali" : pass
 if "yth" in dil : pass
 
 """
-#endregion
+# endregion
 
-#region If-Then-Else
+# region If-Then-Else
 """
 havaD=str(input("Hava durumunu giriniz..."))
 if havaD=="Yağmurlu":
@@ -49,7 +49,7 @@ else:
     print("Hava günlük gülistanlık, rahat bir şeyler giy!")
 """
 
-#engel örneği
+# engel örneği
 """
 engeleDegdiMi= True
 can, skor = 3,0
@@ -67,9 +67,9 @@ if a<0 :
 else:
     print("{} sayısı pozitiftir.".format(a))
 """
- #endregion
+# endregion
 
- #region If-Then-Else-Elif
+# region If-Then-Else-Elif
 """
 havaD = "yağmurlu"
 if havaD=="yağmurlu":
@@ -89,11 +89,11 @@ else:
     print("{} sayısı pozitiftir.".format(a))
 """
 
-#endregion
+# endregion
 
-#region iç içe if yapısı
+# region iç içe if yapısı
 
-#örnek1
+# örnek1
 """
 havaYagısliMi="yağmurlu"
 havaSogukMu="soğuk"
@@ -105,7 +105,7 @@ if havaYagısliMi=="havadar":
 else:
     print("şemsiyeni alma, kazak giy")
 """
-#örnek2
+# örnek2
 """
 a = int(input("lütfen bir sayı giriniz..."))
 if a>0:
@@ -116,7 +116,7 @@ if a>0:
 else:
     print("{} sayısı 100'den küçük ve negatiftir.".format(a))
 """
-#örnek3
+# örnek3
 """
 temp1=float(input("lütfen vücut sıcaklığını giriniz..."))
 temp2=float(input("lütfen vücut sıcaklığını giriniz..."))
@@ -130,9 +130,9 @@ if temp2>temp1:
         print("{} C* , vücut sıcaklığı normal seviyede!".format(temp2))
 else:print( "ateşi düşüyor")
 """
-#endregion
+# endregion
 
-#region inline if
+# region inline if
 """
 a=int(input("bir sayı giriniz..."))
 metin=""
@@ -151,9 +151,9 @@ print("-----------------------")
 metin="sıfır" if a==0 else "bir" if a==1 else "iki" if a==2 else "hatalı giriş"
 print(metin)"""
 
-#endregion
+# endregion
 
-#region mantıksal operatörler ile koşul birleştirme
+# region mantıksal operatörler ile koşul birleştirme
 """
 yas=int(input("Lütfen kursa kayıt olacak öğrencinin yaşını giriniz..."))
 cevap="Kayıt yaptırabilirsiniz" if 4<yas<6 else "Kayıt yaptıramazsınız"
@@ -166,11 +166,11 @@ else:
     print("kayıt yaptıramazsınız")
 """
 
-#endregion
+# endregion
 
-#region
-#kullanıcı 0 girdiğinde program sonlanacak
-#girilen sayıların en büyüğü ve en küçüğünü yazdır
+# region
+# kullanıcı 0 girdiğinde program sonlanacak
+# girilen sayıların en büyüğü ve en küçüğünü yazdır
 '''
 eb,ek,sayi
 sayi=int(input("Lütfen bir sayı girin: "))
@@ -185,7 +185,4 @@ while sayi!=0:
 print(f"en büyük sayı {eb}, en küçük sayı {ek}")
 '''
 
-#endregion
-
-
-
+# endregion

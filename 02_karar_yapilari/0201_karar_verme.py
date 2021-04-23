@@ -1,4 +1,4 @@
-#region karar verme
+# region karar verme
 
 """
 Programlarımızı yazarken bir şartın sağlanıp sağlanmaması koşulna göre,
@@ -20,4 +20,19 @@ birlikte işlemlere devam ederiz.
   Bu soruları, karşılaştırma operatörleri yardımıyla programa
 sorarız.
 """
-#endregion
+# endregion
+
+# region
+"""
+kosul = True
+if kosul == True:
+  print('''
+  Koşul şağlandığı için print fonksiyonu bu bloğu geri döndürür.
+  Bu blokta print dışanda da istediğimiz işlemleri yapabiliriz.
+  ''')
+else:
+  print('''
+  Koşul sağlanmasaydı bu bloktaki işlemler çalışacaktı.
+  ''')
+"""  
+# endregion

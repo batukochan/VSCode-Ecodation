@@ -80,7 +80,7 @@ else:
 #endregion
 
 #region örnek 7
-"""
+
 a=int(input("Lütfen bir sayı giriniz : "))
 b=int(input("Lütfen bir sayı giriniz : "))
 c=int(input("Lütfen bir sayı giriniz : "))
@@ -92,5 +92,5 @@ if a<c:
 if b<c:
     b,c=c,b
 print(f"{a}>{b}>{c}")
-"""
+
 #endregion

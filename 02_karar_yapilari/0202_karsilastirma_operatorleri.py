@@ -7,30 +7,30 @@
 6 -> >=
 """
 
-#region == , !=
+# region örnekler
 """
-print(10==10)
-print(-5==-5)
-print(10==5)
-print("istanbul"=="istanbul")
-print("istanbul"=="istanbul ")
-print(10!=10)
-print(10!=5)
+print(19 == 19)  # True
+print(-5 != -5)  # False
+print(20 == 21)  # False
+print("istanbul" == "Bursa")  # False
+print("istanbul" == "istanbul")  # True
+print(12 <= 10)  # False
+print(12 >= 10)  # True
 """
-#endregion
+# endregion
 
-#region örnek 1
+# region örnek 1
 
 """
 yas=int(input("yaşınızı giriniz :\t"))
 print(yas>=18)
 """
 
-#endregion
+# endregion
 
-#region örnek 2
+# region örnek 2
 """
 kullaniciAdi=str(input("kullanıcı adınızı giriniz : "))
 print(kullaniciAdi=="admin")
 """
-#endregion
+# endregion

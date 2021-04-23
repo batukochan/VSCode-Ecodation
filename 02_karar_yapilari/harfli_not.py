@@ -13,7 +13,6 @@ finalNotu=int(input("Lütfen final notunuzu giriniz :\t "))
 ort= vizeNotu*0.4 + finalNotu*0.6
 if finalNotu<45:
     print("Ortlamanız : {} Bütünleme sınavında başarılar dileriz...".format(round(ort,2)))
-    
 else:
     pass
     if 45<=ort<60:

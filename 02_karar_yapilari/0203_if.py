@@ -8,14 +8,16 @@
 #endregion
 
 #region ornek_1
-"""
-havaDurumu = "güneşli"
-print("a")
+
+havaDurumu = "yağmurlu"
+print("a") 
 if havaDurumu == "yağmurlu":
-    #print("şemsiye alın lütfen")
+    print("şemsiye alın lütfen")
     print("b")
+else: 
+    print("Tişört giy!")
 print("c")
-"""
+
 #endregion
 
 #region ornek_2

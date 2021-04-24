@@ -1,4 +1,4 @@
-#region giriş
+# region giriş
 # loop
 '''
 loop ne zaman kullanılır ?
@@ -10,9 +10,9 @@ while i<5:
     print("sponsorlu ürün")
     i+=1
 """
-#endregion
+# endregion
 
-#region dikkat
+# region dikkat
 
 ''' 
 sonsuz döngüye girersen ctrl+c ile kesebilirsin.
@@ -20,18 +20,18 @@ başlangıç
 bitiş
 artış miktrına dikkat et
 '''
-#endregion
+# endregion
 
-#region başlangıç
+# region başlangıç
 '''
 i=0
 while i<3:
     i+=1
     print("selamlar")
 '''
-#endregion
+# endregion
 
-#region örnek 1
+# region örnek 1
 '''
 i = 1
 print("a")
@@ -51,18 +51,18 @@ while i<=3:
     i += 1
 print("c")
 """
-#endregion
+# endregion
 
-#region örnek 2
+# region örnek 2
 '''
 i=5
 while i!=0: # i: deyazsaydık olurdu
     print(i)
     i-=1
 '''
-#endregion
+# endregion
 
-#region örnek 3
+# region örnek 3
 """
 sayac = 5
 devamMi = True
@@ -72,6 +72,4 @@ while devamMi==True:
         devamMi=False
     sayac -= 1
 """
-#endregion
-
-#region örnek 4
+# endregion

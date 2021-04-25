@@ -1,4 +1,4 @@
-#region örnek 1
+# region örnek 1
 """
 i,say=-1,0
 while range(i,99):
@@ -6,9 +6,9 @@ while range(i,99):
     say+=i
 print(say,end="\t")
 """
-#endregion
+# endregion
 
-#region örnek 2 çarpım
+# region örnek 2 çarpım
 """
 a=int(input("Lütfen bir sayı giriniz: "))
 i=0
@@ -16,38 +16,35 @@ while i<10:
     i+=1
     print(f"{a} x {i} = {a*(i)}")
 """
-#endregion
+# endregion
 
-#region örnek 3 susam
+# region örnek 3 susam
 """
 print('''
 açıl ..... açıl!
 ''')
 while True :
     a=str(input("Boşluğu doldurunuz : "))
-    if a=="Susam" or a=="susam":
+    if a.lower()=="susam":
         print("Açıl susam açıl")
         break     
     else:
         print("açamadın mı?")
 """
-#endregion
+# endregion
 
-#region örnek 4
+# region örnek 4
 """
 i=0
 while i<100:
     i+=1
     if i%7==0:
         print(i,end=" ") 
-"""   
-#endregion
-        
-#region örnek 5
+"""
+# endregion
 
-#endregion
+# region örnek 5
 
-#region örnek 6
 """
 a=int(input("Faktoriyeli alınacak değer: "))
 i,fakt=1,1
@@ -55,17 +52,22 @@ while i<a:
     i+=1
     fakt*=i
 print(f"{a}! = {fakt}")
-
-i = 1
-    res = 1
-    while i <= 5:
-        res *= i
-        print(f"{i} sayısının faktöriyeli = {res}")
-        i += 1
 """
-#endregion    
 
-#region örnek 7
+# endregion
+
+# region örnek 6
+"""
+i = 1
+res = 1
+while i <= 5:
+    res *= i
+    print(f"{i} sayısının faktöriyeli = {res}")
+    i += 1
+"""
+# endregion
+
+# region örnek 7
 
 # sıfır girdiğinde çıkacak, ortalama
 """
@@ -77,9 +79,9 @@ while a!=0:
     a=int(input("sayı giriniz: "))   
 print(f"girilen {i} adet sayının ortalaması : {round((toplam/i),2)}")
 """
-#endregion
+# endregion
 
-#region örnek 8
+# region örnek 8
 """
 '''
 100-999 arası seri ancak, hane sayısına eşit olanları ekrana yazalım
@@ -103,9 +105,9 @@ while i<1000:
     i+=1
 """
 
-#endregion
+# endregion
 
-#region
+# region
 """
 i,j,b=2,5,-1
 while 1<=i<=2:
@@ -148,10 +150,10 @@ while i<10:
         j-=i
     i+=1
     print()
-"""    
-#endregion
+"""
+# endregion
 
-#region
+# region
 '''
 rastgele sayı üret
 1-99
@@ -174,5 +176,4 @@ while tahmin!=a:
     if fark<ek:
         ek=fark
 """
-#endregion
-
+# endregion

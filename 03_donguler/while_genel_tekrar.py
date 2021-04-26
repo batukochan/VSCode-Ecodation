@@ -114,7 +114,7 @@ print(deger)
 #endregion
 
 #region örnek 8
-"""
+""""""
 i,j=0,0
 deger=""
 while i<4:
@@ -126,7 +126,7 @@ while i<4:
     j=0
     deger=""
    
-"""
+
 #endregion
 
 #region örnek 8

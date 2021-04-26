@@ -1,8 +1,12 @@
 #region while döngüsü
-"""while True
+"""
+while True:
     print("buradayım")
-for i in "":
-    print("buradayım")
+    #sonsuz döngü
+"""
+"""
+for i in range(5):
+    print(f"{i+1} - buradayım")
 """
 #bailangıç
 #bitiş

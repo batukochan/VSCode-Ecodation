@@ -61,9 +61,9 @@ print(kurum.capitalize())
 kurum = "Flux Mimarlık ofisi"
 print(kurum.count(("z"))) #verinin tamamında 'z' arar.
 # çıktımız → 0
-print(kurum.count("a", 6, 8)) #6.-8. index arasında 'i' arar. 8 dahil değil
+print(kurum.count("a", 6, 8)) #6.-8. index arasında 'a' arar. 8 dahil değil
 # çıktımız → 0
-print(kurum.count("a", 6, 9)) #6.-8. index arasında 'i' arar. 9 dahil değil
+print(kurum.count("a", 6, 9)) #6.-8. index arasında 'a' arar. 9 dahil değil
 # çıktımız → 1
 """
 # endregion

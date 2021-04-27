@@ -217,7 +217,6 @@ print(deger.isidentifier())
 
 # region split
 """
-'''parametre ile belirtilen değer, değişken ismi olur mu olmaz mı doğrulamak için kullanılır.'''
 kurum  = "Flux Mimarlık Ofisi"
 print(kurum.split())
 kurum1  = "Flux Mimarlık Ofisi ile Geleceğin Yapılarını Tasarla "

@@ -219,13 +219,13 @@ print(deger.isidentifier())
 """
 kurum  = "Flux Mimarlık Ofisi"
 print(kurum.split())
-kurum1  = "Flux Mimarlık Ofisi ile Geleceğin Yapılarını Tasarla "
+kurum1  = "Flux Mimarlık Ofisi ile, Geleceğin Yapılarını Tasarla "
 print(kurum1.split("."))
-cumleSayisi = len(kurum1.split("."))
+cumleSayisi = len(kurum1.split(","))
 print(cumleSayisi)
-kurum  = "Flux Mimarlık Ofisi ile Geleceğin Yapılarını Tasarla"
+kurum  = "Flux Mimarlık Ofisi ile, Geleceğin Yapılarını Tasarla"
 listem = [i for i in kurum.split(" ")]
-listem = [i for i in kurum.split(".")]
+listem = [i for i in kurum.split(",")]
 print(listem)
 """
 # endregion
@@ -234,6 +234,7 @@ print(listem)
 """
 kurum  = "Flux Mimarlık Ofisi"
 print(len(kurum.lower().upper().title().replace("i", "ı")))
+print(kurum.lower().upper().title().replace("i", "ı"))
 """
 # endregion
 

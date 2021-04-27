@@ -33,7 +33,7 @@ print(tupleListem[2])
 # region tuple_guncelleme
 """
 tupleListem = (1, 2, 4, 8, 2, 3.14)
-tupleListem[0] = "sıfır"
+#$tupleListem[0] = "sıfır"
 """
 # endregion
 
@@ -65,12 +65,12 @@ print(listem)
 
 # region tuple_metodlari_index
 """
-tupleListem = (1, 2, 4, 8, 2, 3.14)
+tupleListem = (1, 2, 4, 8, 2, 14)
 x = input("Aradığınız Eleman : ")
 if x.isdigit():
-    x = int(x)
+    x = int(x) 
     if x in tupleListem:
-        print(f"aradığınız {x} değeri {tupleListem.index(x)+1}. indekslidir")
+        print(f"aradığınız {x} değeri {tupleListem.index(x)+1}. sıradadır.")
     else:
         print(f"aradığınız {x} değeri listede yoktur")
 else:
@@ -99,4 +99,4 @@ print(f"ortalaması {sum(listem)/len(listem)}")
 print(f"minimum değer {min(listem)}")
 print(tupleAsilListe)
 """
-# endregion
+# endregion0

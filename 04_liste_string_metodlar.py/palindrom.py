@@ -13,3 +13,9 @@ def palidromMu(sozcuk: str) -> bool:
 
 palidromMu("ahmet")
 """
+isim = input("Lütfen isminizi giriniz: ")
+if isim.isalpha():
+    tersIsim = isim[::-1]
+    print(tersIsim)
+else:
+    print("Lütfen metinsel değer giriniz...")

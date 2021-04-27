@@ -113,7 +113,7 @@ print(ipDetay["ip"]["lat"])
 # endregion
 
 # region ornek_3
-""""""
+"""
 sirket = {
     "departman": {
         "yazılım": ["ali", "mehmet"],
@@ -138,5 +138,6 @@ print(sirket["departman"]["yazılım"])
 print(sirket["departman"]["yazılım"][0])
 print(sirket["sirketArabalari"][2])
 print(sirket["sirketArabalari2"]["renault megan"])
-
+print(sirket["telefonlar"]["istanbul"])
+"""
 # endregion

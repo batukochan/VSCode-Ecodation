@@ -170,7 +170,7 @@ print(deger.isalpha())
 # region isalnum
 """
 '''alfanumerik ise True, değilse False döner.'''
-deger = "1nciSınıf" #a-z,A-Z,0-9 içerebilir.
+deger = "12nciSınıf" #a-z,A-Z,0-9 içerebilir.
 print(deger.isalnum())
 """
 # endregion

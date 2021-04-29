@@ -1,3 +1,4 @@
+# region örnek 7
 """
 def listeyeCevir(*params):
     liste = []
@@ -8,3 +9,4 @@ def listeyeCevir(*params):
 result = listeyeCevir(10,20,30,'Merhaba')
 print(result)
 """
+# endregon

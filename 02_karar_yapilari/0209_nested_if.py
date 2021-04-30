@@ -1,18 +1,21 @@
-#region nested if örnek 1
+# region nested if örnek 1
 """
-havaYagisliMi=False
-havaSogukMu=True   
-if havaYagisliMi==True:
-    if havaSogukMu==True:
-        print("Şemsiye al ve kazak giy")
+para = True
+vakit = True
+if para == True:
+    if vakit == True:
+        print("Sinemaya gidebilirsiniz.")
     else:
-        print("Şemsiye al tişört giy")
+        print("Online alışveriş yapabilirsin")
 else:
-    print("Tişört giy")
+    if vakit == True:
+        print("Televizyon izleyebilirsin")
+    else:
+        print("Moralini yüksek tutmaya çalış, her şey güzel olacak!")
 """
-#endregion
+# endregion
 
-#region örnek 2
+# region örnek 2
 """
 a=int(input("Lütfen bir sayı giriniz : "))
 if 100>=a>0:
@@ -20,4 +23,18 @@ if 100>=a>0:
 else:
     print("Lütfen 0-100 arası bir değer giriniz.")
 """
-#endregion
+# endregion
+
+# region örnek
+"""
+a = int(input("a: "))
+b = int(input("b: "))
+if a == b:
+    print("a ve b birbirine eşittir")
+else:
+    if a < b:
+        print("a, b'den küçüktür")
+    else:
+        print("a, b'den büyüktür")
+"""
+# endregion

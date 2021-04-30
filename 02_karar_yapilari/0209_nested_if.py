@@ -38,3 +38,16 @@ else:
         print("a, b'den büyüktür")
 """
 # endregion
+
+# region basit örnek
+
+a = int(input("lütfen sayı giriniz... \nSayı : "))
+if a > 0:
+    if a < 100:
+        print(f"{a} sayı 100 den küçüktür, pozitif")
+    else:
+        print(f"{a} sayı 100 den büyüktür, pozitif")
+else:
+    print("lütfen 0 ya da negatif değer girmeyin!")
+
+# endregion

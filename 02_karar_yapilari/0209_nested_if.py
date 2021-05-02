@@ -70,13 +70,3 @@ else:
     print("lütfen 0 ya da negatif değer girmeyin!")
 """
 # endregion
-
-# region mantıksal operatörler
-"""
-print(not(2 < 3))
-# True → False
-print(not(2 == 3))
-# False → True
-"""
-
-# endregion

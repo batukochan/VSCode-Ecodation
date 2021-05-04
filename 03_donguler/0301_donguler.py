@@ -73,3 +73,4 @@ while devamMi==True:
     sayac -= 1
 """
 # endregion
+

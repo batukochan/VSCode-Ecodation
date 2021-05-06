@@ -1,14 +1,11 @@
 # region giriş
-# loop
-'''
-loop ne zaman kullanılır ?
-loop -> sürekli tekrarlayan bir yapı varsa 
-'''
 """
-i=0
-while i<5:
-    print("sponsorlu ürün")
+
+i=1
+while i<=5:
+    print(f"{i}.ürün")
     i+=1
+
 """
 # endregion
 
@@ -42,12 +39,13 @@ print("c")
 
 '''
 """
+
 i = 1
 print("a")
 while i<=3:
     print("b")
     if i==2:
-        print("elif")
+        print("abc")
     i += 1
 print("c")
 """

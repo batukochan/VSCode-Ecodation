@@ -49,10 +49,3 @@ while True:
 print(f"listedeki en büyük sayı: {eb}")
 """
 #endregion
-
-
-
-
-
-
-

@@ -11,12 +11,3 @@ while i<10:
 """
 #endregion
     
-#region örnek
-
-
-
-
-
-
-
-

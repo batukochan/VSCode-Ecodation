@@ -11,12 +11,21 @@ def poligon(t, uzunluk, n):
         t.lt(aci)
 
 
+"""
 def cember(t, r):
     cevre = 2*math.pi*r
     n = 50
     uzunluk = cevre/n
     poligon(t, n=n, uzunluk=uzunluk)
-
-
 cember(t, 100)
+"""
+
+
+def cember(t, r):
+    cevre = 2*math.pi*r
+    n = int(cevre/3)
+    uzunluk = cevre/n
+    poligon(t, n=n, uzunluk=uzunluk)
+
+cember(t,50)
 turtle.mainloop()

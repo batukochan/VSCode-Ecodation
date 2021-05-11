@@ -30,4 +30,15 @@ print(topla(2,3,4,5,6,7,8,9))
 """
 # endregion
 
-# region lambda
+# region
+
+def girdiAl(metin):
+    girdi = input(metin)
+    return girdi 
+"""
+sayi = girdiAl("Lütfen br sayı giriniz: ")
+print(sayi)
+"""
+# endregion
+
+#region

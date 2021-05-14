@@ -66,7 +66,7 @@ for satir in file:
 # region yasak harf fonksiyonu
 
 
-def yasakHarfVarMi(metin, yasakHarf):
+def HarfVarMi(metin, yasakHarf):
     for i in metin:
         if i in yasakHarf:
             return True  # yasak harf var
@@ -77,20 +77,23 @@ def yasakHarfVarMi(metin, yasakHarf):
 """
 metin = "Ben bir yazılım geliştiricisi olmak istiyorum."
 yasakHarf = "ç"
-varMi = yasakHarfVarMi(metin,yasakHarf)
+varMi = HarfVarMi(metin,yasakHarf)
 print(varMi)
 """
 
 # endregion
 
-# region 
+# region
+
 
 def sadeceSunlariKullanir(metin, harfler):
     for harf in metin:
-        if harf.isalpha() and not harf in harfler: 
+        if harf.isalpha() and not harf in harfler:
             return False
     else:
         return True
+
+
 """
 metin = 'okyanus ordusu'
 harfler = 'okyanusrd' #sadece bu harfleri barındırır
@@ -103,16 +106,69 @@ print(set(metin))
 # region
 
 
-def loremBuHarfleriMiKullanir(harler):
+def loremBuHarfleriMiKullanir(harfler):
     file = open('C:\\Users\\batuh\\Downloads\\sozcukler.txt')
 
     for satir in file:
         kelime = satir.split()
         sozcuk = kelime[0]
-        if sadeceSunlariKullanir(sozcuk,harfler):
+        if sadeceSunlariKullanir(sozcuk, harfler):
             print(kelime)
 
-    
-harfler = 'ens'
+
+"""
+harfler = 'ens' # Kelimede yalnızca bu harfler olabilir...
 a = loremBuHarfleriMiKullanir(harfler)
 print(a)
+"""
+
+# endregion
+
+# region
+
+
+def hepsiniKullanir(metin, harfler):
+    tumunuKullanir = True
+    for harf in harfler:
+        if not harf in metin:
+            tumunuKullanir = False
+    return tumunuKullanir
+
+
+def hepsiniKullanirLorem(harfler):
+    file = open('C:\\Users\\batuh\\Downloads\\sozcukler.txt')
+
+    for i in file:
+        kelime = i.split()
+        sozcuk = kelime[0]
+
+        if hepsiniKullanir(sozcuk, harfler):
+            print(kelime)
+
+
+"""
+harfler = 'aei'
+hepsiniKullanirLorem(harfler)
+"""
+
+# endregion
+
+# region 
+
+def sadeceTumunukullanir(harfler):
+    
+    # dosyayı tekrar okuyalım
+    file = open('C:\\Users\\batuh\\Downloads\\sozcukler.txt')
+    
+    for satir in file:
+        
+        kelime_dizisi = satir.split()
+        kelime = kelime_dizisi[0]
+        
+        # şimdi bu kelime sadece harfler ama tüm harfleri mi kullanıyor
+        if sadeceSunlariKullanir(kelime, harfler) and hepsiniKullanir(kelime, harfler):
+            print(kelime)
+
+harfler = 'fir'
+sadeceTumunukullanir(harfler)
+

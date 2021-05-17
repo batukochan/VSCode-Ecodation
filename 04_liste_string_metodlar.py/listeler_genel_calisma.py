@@ -197,17 +197,48 @@ id(a) == id(b) nesne kontrolü yapar
 a = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 b = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-print(a is b)  # False
-print(id(a) == id(b))  # False
-print(a == b)  # True
+# print(a is b)  # False
+# print(id(a) == id(b))  # False
+# print(a == b)  # True
 
 k1 = 128
 k2 = 128
-print(k1 is k2)  # True
+
+# print(k1 is k2)  # True
+
 ''' is aslında id() kontrolüdür. '''
 
 # endregion
 
-# region allising ( yeni bi ad verme )
+# region matris operasyonları
 
+uceUcMatris = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
 
+print(uceUcMatris[0])
+print(uceUcMatris[0][2])  # 3
+
+uceUcMatris2 = [
+    [10, 20, 30],
+    [40, 50, 60],
+    [70, 80, 90]
+]
+
+toplamMatris = [
+    [0, 0, 0],
+    [0, 0, 0],
+    [0, 0, 0]
+]
+
+for i in range(len(uceUcMatris)):
+
+    for j in range(len(uceUcMatris2)):
+
+        toplamMatris[i][j] = uceUcMatris[i][j] + uceUcMatris2[i][j]
+
+print(toplamMatris)
+
+# endregion

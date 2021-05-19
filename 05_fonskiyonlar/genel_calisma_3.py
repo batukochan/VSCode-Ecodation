@@ -115,4 +115,5 @@ def aritmatikOrt(*args):
 """
 print(aritmatikOrt(12,17,11))
 """
+
 #endregion

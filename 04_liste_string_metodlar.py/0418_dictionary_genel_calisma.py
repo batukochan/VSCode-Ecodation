@@ -79,7 +79,25 @@ def harfSay(metin):
             else:
                 harfler[harf] = 1
     return harfler
-
+"""
 metin = 'Bu metinde hangi harften kaç tane var'
 harfSozlugu = harfSay(metin)
 print(harfSozlugu)
+"""
+
+#endregion
+
+# region 
+
+def harfSay2(metin):
+
+    harfler = dict()
+    for harf in metin:
+        if harf.isalpha():
+            harfler[harf] = harfler.get(harf, 0) + 1
+    return harfler
+"""
+a = harfSay2('yeni konular çok keyifli')
+print(a)
+"""   
+#endregion

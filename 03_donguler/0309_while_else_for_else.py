@@ -22,15 +22,18 @@ print("While döngüsü bitti")
 for döngüsü break satırı çalışmadan biterse, else içerisine girer.
 Eğer break satırı çalışarak girerse, else içerisine girmez.
 '''
-"""
+
 for i in range(10,0,-1):
     print(i,end=" ")
+    
     if i==9:
-        pass #break kullanırsak else bloğuna girmez
+        continue #break kullanırsak else bloğuna girmez
 else:
+    print()
     print("şuan for else yapısındayım")
+    
 print("buradayım")
-"""
+
 
 #endregion
 

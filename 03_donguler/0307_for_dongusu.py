@@ -1,14 +1,14 @@
 '''
 while döngüsünden farkı adım sayısının ne kadar döneceği bellidir.
 '''
-#region for döngüsü
+# region for döngüsü
 """
 for i in range(10):
     print(i)
 """
-#endregion
+# endregion
 
-#region range
+# region range
 """
 sayiDizisi=list(range(10))
 print(sayiDizisi)
@@ -23,44 +23,44 @@ iki argüman girirsek başlangıç ve bitiş yazılır artış miktarı yazmazsa
 artış +1 kabul edilir. Alçalma istiyorsak artış miktarını değiştirmeliyiz.
 '''
 """
-#endregion
+# endregion
 
-#region 
+# region
 """
 for i in range(1,11):
     if i!=5:
         print(f"{i}. öğrenci")
-"""    
-#endregion
+"""
+# endregion
 
-#region iç içe for
+# region iç içe for
 """
 for i in range(1,6):
     for j in range(1,6):
         print(" * ",end="")
     print()
 """
-#endregion
+# endregion
 
-#region
+# region
 """
 for i in range(1,6):
     for j in range(1,6):
         print(f"[{i:^2}x{j:^2}= {(i*j):^3}]",end=" ")
     print()
 """
-#endregion
+# endregion
 
-#region örnek2
+# region örnek2
 """
-a=int(input("Lütfen bir sayı giriniz: "))
-for i in range(1,a+1):
-    if a%i==0:
-print(a,"sayılarına bölünür")
+a = int(input("Lütfen bir sayı giriniz:\nSayı: "))
+for i in range(1, a+1):
+    if a % i == 0:
+        print(f"{a} sayısı, {i} sayısına tam bölünür")
 """
-#endregion
+# endregion
 
-#region
+# region
 
 """
 a=int(input("lsg:""))
@@ -73,27 +73,35 @@ if a%say==0:
 else:
     print("TAU değildir.")    
 """
-#endregion
+# endregion
 
-#region
+# region
 '''
 mükemmel sayı
-tüm çarpanarının toplamı kendisini verir
+    Mükemmel sayı, sayılar teorisinde, kendisi hariç pozitif 
+tam bölenlerinin toplamı kendisine eşit olan sayı. Diğer bir 
+ifadeyle, bir mükemmel sayı, bütün pozitif tam bölenlerinin 
+toplamının yarısına eşittir.
 '''
 """
-a=int(input("lütfen sayı girin: "))
-toplam=0
-for i in range(1,a):
-    if a%i==0:
-        toplam+=i
-if toplam==a:
-    print("mükemmel bir sayı")
-else:
-    print("mükemmel değil")
+Pozitif tam bölenleri bul
+bu değerleri topla sayının kendisiyle karşılaştır.
+karşılaştırma sonucu doğruysa → Mükemmel sayı
+karşılaştırma sonucu doğru değilse → Mükemmel sayı değil
 """
-#endregion
+a = int(input("lütfen sayı girin: "))
+toplam = 0
+for i in range(1, a):
+    if a % i == 0:
+        toplam += i
+if toplam == a:
+    print(f"{a} sayısı, mükemmel sayıdır.")
+else:
+    print(f"{a} sayısı, mükemmel sayı değildir.")
 
-#region
+# endregion
+
+# region
 
 '''
 obeb 
@@ -108,5 +116,4 @@ for i in range(1,min(s1,s2)+1): #güzel
 print(obeb)
 """
 
-#endregion
-
+# endregion

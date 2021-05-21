@@ -69,3 +69,23 @@ def tersUcgenFor(n=3):
 tersUcgenFor(12)
 """
 # endregion
+
+# region
+""""
+isim = input('Lütfen adınızı girin...\nAdınız: ')
+
+i = 0
+while i<10:
+    i += 1
+    print(f'{i}. {isim[0]}') 
+"""
+# ismin ilk harfini alma şekline birkaç ders sonra değineceğim.
+
+# for döngüsü ile
+
+isim = input('Lütfen adınızı girin...\nAdınız: ')
+"""
+for i in range(1,11):
+    print(f'{i}. {isim[0]}') 
+"""
+# endregion

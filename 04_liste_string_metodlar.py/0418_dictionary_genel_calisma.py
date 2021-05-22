@@ -101,3 +101,24 @@ a = harfSay2('yeni konular çok keyifli')
 print(a)
 """   
 #endregion
+
+# region 
+
+def harfListele(metin):
+    sozluk = harfSay(metin)
+    harfler = dict()
+    for key in sozluk:
+        deger = sozluk[key]
+
+        if deger not in harfler:
+            #yoksa ekliyoruz
+            harfler[deger] = [key]
+        else:
+            # varsa
+            harfler[deger].append(key)
+    return harfler
+
+metin = 'kaplumbağa'
+print(harfListele(metin))
+
+# list, dictionary değerde value olarak kullanılabilir ancak key olamaz.

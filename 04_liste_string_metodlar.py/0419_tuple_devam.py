@@ -35,7 +35,8 @@ print(dil[::-1])  # tersten yazabiliriz.
 
 print((0, 1, 2) < (3, 4, 5))
 
-print((5, 40, 200) < (6, 3, 5)) # ilk önce 5 ile 6yı karşılaştırır gerisine bakmaz.
+# ilk önce 5 ile 6yı karşılaştırır gerisine bakmaz.
+print((5, 40, 200) < (6, 3, 5))
 
 print(('abcd2',) < ('abcd3',))
 """
@@ -73,3 +74,138 @@ print(d)
 print(e)
 """
 # endregion
+
+# region return tuple
+
+'''
+Çoklu değer döndürmek amacıyla kullanılabilir.
+'''
+"""
+sonuc = divmod(32, 3)
+print(sonuc)  # (10,2) bölüm,kalan
+print('kalan = ',sonuc[1]) # kalan =  2
+
+bolum, kalan = divmod(32,3)
+print(f'bölüm = {bolum}, kalan = {kalan}') # bölüm = 10, kalan = 2
+"""
+
+# endregion
+
+# region örnek
+
+'''
+parametre sayısı belli olmayan bir fonksiyon yazalım.
+'''
+
+
+def toplamCarpim(*args):
+    '''
+    *args yapısı bir tuple'dır.
+    '''
+    toplam = sum(args)
+    carpim = 1
+    for arg in args:
+        carpim *= arg
+
+    return (toplam, carpim)
+
+
+toplam, carpim = toplamCarpim(2, 4, 6, 8, 10)
+
+#print(f"Sayıların toplamı {toplam}, sayıların çarpımı {carpim}")
+
+# endregion
+
+# region örnek 2
+
+'''
+Parametre olarak bir tam sayı listesi alan ve bu listenin minimum maksimum 
+ve aritmetik ortalamasını veren bir fonk yazın.
+'''
+
+
+def minMaxAort(l1: list):
+    import statistics
+
+    minimum = min(l1)
+    maksimum = max(l1)
+    """
+    toplam = 0
+  
+    for sayi in l1:
+        toplam += sayi
+    aOrt = toplam/len(l1)
+    """
+    aOrt = statistics.mean(l1)  # paket ile işler daha kolay!
+
+    return (minimum, maksimum, aOrt)
+
+
+l1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+mi, ma, ort = minMaxAort(l1)
+"""
+print(f'''
+listenin en küçük elemanı {mi}
+listenin en büyük elemanı {ma}
+listenin aritmatik ortalaması {ort}
+''')
+"""
+
+# endregion
+
+# region zip fonksiyonu
+
+metin = 'fermuar'
+listem = [1, 2, 3, 4, 5, 6, 7]
+
+zipNesnesi = zip(metin, listem)
+"""
+print(zipNesnesi)  # <zip object at 0x0000025C01F0A200>
+"""
+"""
+zip() fonksiyonun geriye döndüğü zip nesnesi bir #iteratör döner.
+#iteratörler içinde sayılabilir değerler tutan ve üzerinde döngü kurulabilen (iterate olabilen)
+nesnelerdir.
+#iteratörler, listelere benzer fakat list'ler gibi onların üzerinde index ile işlem yapılamaz. 
+"""
+
+# zipNesnesi bir iterator → döngü kurulabilir.
+"""
+for i in zipNesnesi:
+    print(i)
+"""
+
+# zip nesnesi liste çevirip indexlemek
+"""
+zipNesnesi = list(zipNesnesi)
+print(zipNesnesi)  # boş liste döner
+"""
+# iterator üzerinde 1 kere dönüşlebilir.
+
+# endregion
+
+# region örnek 4 for ile dönmek tuple almak
+"""
+a = "abcd"
+b = [10, 20, 30, 40]
+
+yeniZipNesnesi = zip(a, b)
+
+for aElemani, bElemani in yeniZipNesnesi:
+    print(f"aElemanindan gelen {aElemani}, bElemaninden gelen {bElemani}")
+"""
+
+# gelen iki parametreyi karşılaştırıp eşit olanları yazdıralım.
+
+a = [1, 3, 5, 7, 2, 7, 45, 96, 12, 123, 45, 121, 12, 56]
+b = [3, 5, 5, 2, 7, 7, 96, 54, 12, 122, 34, 121, 12, 34]
+
+yeniZipNesnesi = zip(a, b)
+"""
+for aElemani, bElemani in yeniZipNesnesi:
+    if bElemani == aElemani:
+        print(aElemani, '=', bElemani)
+"""
+# endregion
+
+

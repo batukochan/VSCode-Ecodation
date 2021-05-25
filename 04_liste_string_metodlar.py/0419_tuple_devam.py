@@ -208,4 +208,91 @@ for aElemani, bElemani in yeniZipNesnesi:
 """
 # endregion
 
+# region ord
 
+sozluk = {
+    'A': ord('A'),
+    'B': ord('B'),
+    'C': ord('C'),
+    'a': ord('a'),
+    'b': ord('b'),
+    'c': ord('c')
+}
+"""
+print(sozluk)
+
+for key,value in sozluk.items():
+    print(key,value)
+    # hatırlatma : dict sıra olmaz, bu örnekte denk geldi.
+"""
+
+# endregion
+
+# region tuple to dict
+
+aylarGunler = [
+    ('ocak', 31),
+    ('Şubat', 28),
+    ('Mart', 31),
+    ('Nisan', 30)
+]
+
+aylarGunlerSozluk = dict(aylarGunler)
+
+# print(aylarGunlerSozluk)
+
+# endregion
+
+# region örnek 5
+
+'''
+zip() ve range kullanrak haftanın günlerini bir dictionary içinde indexliyelim
+1:Pazartesi
+2:Salı...
+'''
+
+gunler = ['Pazartesi', 'Salı', 'Çarşamba',
+          'Perşembe', 'Cuma', 'Cumartesi', 'Pazar']
+sira = [1, 2, 3, 4, 5, 6, 7]
+
+gunlerSirasi = zip(sira, gunler)
+
+gunlerSozlugu = dict(gunlerSirasi)
+# print(gunlerSozlugu)
+
+# endregion
+
+# region
+
+isimler = ["Ahmet", "Mehmet", "İrem", "Meryem"]
+soyİsimler = ["Kancalı", "Fiyakalı", "NUr", "Su"]
+yaslar = [23, 12, 45, 34]
+yasSozlugu = dict()
+for isim, soyisim, yas in zip(isimler, soyİsimler, yaslar):
+
+    yasSozlugu[(isim, soyisim)] = yas
+
+# print(yasSozlugu)
+
+# endregion
+
+# region lambda
+
+gitarlar = ('ESP', 'LTD', 'Gibson', 'Fender', 'Ibanez')
+# harf sayısına göre sıralayalım
+
+
+def sirala(e):
+    return len(e)
+
+# sorted() yeni bir liste yaratır.
+#print(sorted(gitarlar, key=sirala))
+
+a = sorted(gitarlar, key= lambda x:len(x))
+#print(a)
+
+gitarListesi = list(gitarlar)
+gitarListesi.sort(key = lambda x: len(x))
+#print(gitarListesi)
+
+# endregion

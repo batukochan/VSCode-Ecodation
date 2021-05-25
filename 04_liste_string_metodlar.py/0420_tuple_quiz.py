@@ -121,3 +121,196 @@ i = 0
 
 # print(kacAdetVar(t,i))
 #print(kacAdet(t, i))
+
+"""
+Soru 5:
+
+Tuple üzerinde dilimleme işlemleri daha önce String ve List'lerde gördüğümüz gibidir.
+
+Elimizde şu şekilde bir Tuple olsun:
+
+ tup = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j') 
+Aşağıdaki sorulara slicing yani dilimleme ile (index bazlı) cevap veriniz:
+
+4'cü eleman (dahil) ile 7'ci eleman (dahil) arasını bulun
+İlk 5 elemanı bulun
+6'cı elemandan (dahil) sonrasını bulun
+Tüm elemanları bulun
+Sondan 2. elemanı bulun
+Son 4 elemanı bulun
+2'ci elemandan başlayıp, 8'ci elemana kadar 2'şer atlayarak yazın
+Tüm elemanları 3'er atlayarak yazın
+9'uncu elemandan, 3'cü elemana (hariç) kadar tersten yazın
+tup'u tersten yazın
+tup'u tersten 2'şer atlayarak yazın
+Son elemana (hariç) kadar olan tüm elemanlarını ters index ile alınız
+"""
+
+tup = ('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j')
+"""
+print(tup[3:7])
+print(tup[:5])
+print(tup[7:])
+print(tup[::])
+print(tup[-2])
+print(tup[-4:])
+print(tup[1:8:2])
+print(tup[8:2:-1])
+print(tup[::-1])
+print(tup
+
+[::-2])
+print(tup[:-1])
+"""
+
+"""
+Soru 6:
+
+Parametre olarak bir liste alan bir fonksiyon yazın. Fonksiyonun adı, tuple_sonunu_degistir olsun.
+Bu listenin elemanları birer Tuple olsun.
+Her bir tuple farklı uzunlukta olabilir. Dolayısı ile Listenin elemanlarının uzunlukları sabit değil.
+Yazacağınız fonksiyon, Liste içindeki her bir Tuple elamanının son üyesini silsin, yerine karesini yazsın.
+
+İpuçları:
+
+Liste yerinde değişsin, yani parametre olarak gelen orjinal liste değişsin
+Tuple'ın son elemanını index ile nasıl alacağınızı düşünün
+Listenin içinde for ile dönerken, döngüdeki elemanı değiştirseniz de liste değişmez.
+Listeyi değiştirmenin bir yolunu bulmalısınız (enumerate())
+Tuple birleştirmeye dikkat ediniz (tek elemanlı bir Tuple nasıl olur?)
+Parametre:
+tuple_listesi = [(2,5,8), (4,3), (1,7,9,6), (5,)]
+
+Sonuc:
+tuple_listesi = [(2,5,64), (4,9), (1,7,9,36), (25,)]
+"""
+
+
+def tupleSonunuDegistir(l1):
+
+    for i, tup in enumerate(l1):
+        sonEleman = pow(tup[-1], 2)
+        sonElemanaKadar = tup[:-1]
+        # son eleman tek eleman olduğu için tuple tipine çevirmeliyiz
+        tup = sonElemanaKadar + (sonEleman,)
+        l1[i] = tup
+
+
+tuple_listesi = [(2, 5, 8), (4, 3), (1, 7, 9, 6), (5,)]
+tupleSonunuDegistir(tuple_listesi)
+# print(tuple_listesi)
+
+"""
+
+Soru 7:
+
+Parametre olarak bir liste alan bir fonksiyon yazın. Fonksiyonun adı, tuple_karesi_ile_degistir olsun.
+Bu listenin elemanları birer Tuple olsun.
+Her bir tuple farklı uzunlukta olabilir. Dolayısı ile Listenin elemanlarının uzunlukları sabit değil.
+Yazacağınız fonksiyon, Liste içindeki her bir Tuple elamanının tüm elemanlarının yerine karelerini yazsın.
+
+Ve yeni kareli listeyi geri dönsün.
+
+İpuçları:
+
+Parametre olarak gelen orjinal liste değişmesin
+Listenin içinde for ile dönerken, döngüdeki elemanı değiştirseniz de liste değişmez.
+Parametre:
+tuple_listesi = [(2,5,8), (4,3), (1,7,9,6), (5,)]
+
+Sonuc:
+yeni_tuple_listesi = [(4,25,64), (16,9), (1,49,81,36), (25,)]
+"""
+
+
+def tupleKaresiDegistir(l1):
+
+    yeniListe = l1.copy()
+    for i, tup in enumerate(yeniListe):
+        tuple1 = tuple()
+        for t in tup:
+            tuple1 += (pow(t, 2),)
+
+        yeniListe[i] = tuple1
+    return yeniListe
+
+
+tuple_listesi = [(2, 5, 8), (4, 3), (1, 7, 9, 6), (5,)]
+# print(tupleKaresiDegistir(tuple_listesi))
+"""
+Soru 8:
+
+Parametre olarak 4 liste alan bir fonksiyon yazın. Adı oyuncu_film_karakteri_yil olsun.
+
+Gelen 4 liste şu şekilde olacak:
+
+Liste 1 -> Oyuncunun gerçek adı
+Liste 2 -> Filmin Adı
+Liste 3 -> Filmin Çekildiği Yıl
+Liste 4 -> Karakter Adı
+Fonksiyon bu 4 listedeki, karşılıklı elemanları alacak ve 2'şer elemanlı 2 Tuple haline getirecek. Ve geriye bir Dictionary dönecek.
+
+İlk Tuple -> (Oyuncu Adı, Karakter Adı)
+İkinci Tuple -> (Film Adı, Çekim Yılı)
+Bu Dictionary'nin key'leri İlk Tuple, value'ları ise İkinci Tuple olacak.
+
+İpuçları:
+
+zip()
+Parametreler:
+oyuncular = ['Marlon Brando', 'Heath Ledger', 'Natalie Portman', 'Emma Stone']
+karakterler = ['Don Vito Corleone', 'Joker', 'The Swan Queen', 'Mia']
+filmler = ['The Godfather', 'The Dark Knight', 'Black Swan', 'La La Land']
+yillar = [1972, 2008, 2010, 2016]
+
+Sonuc:
+{('Marlon Brando', 'Don Vito Corleone'): ('The Godfather', 1972),
+ ('Heath Ledger', 'Joker'): ('The Dark Knight', 2008),
+ ('Natalie Portman', 'The Swan Queen'): ('Black Swan', 2010),
+ ('Emma Stone', 'Mia'): ('La La Land', 2016)}
+ """
+
+
+def filmKarakteriYil(l1, l2, l3, l4):
+    sozluk = dict()
+
+    for oyuncu, karakter, film, yil in zip(l1, l2, l3, l4):
+
+        #ikili tuple
+        sozluk[(oyuncu,karakter)] = (film,yil)
+
+    return sozluk
+
+oyuncular = ['Marlon Brando', 'Heath Ledger', 'Natalie Portman', 'Emma Stone']
+karakterler = ['Don Vito Corleone', 'Joker', 'The Swan Queen', 'Mia']
+filmler = ['The Godfather', 'The Dark Knight', 'Black Swan', 'La La Land']
+yillar = [1972, 2008, 2010, 2016]
+
+#print(filmKarakteriYil(oyuncular, karakterler, filmler, yillar))
+"""
+Soru 9:
+
+Parametre olarak bir Tuple alan bir fonksiyon yazın. Adı tuple_sirala olsun.
+
+Parametre olarak gelen Tuple, içinde Tuple'lar tutan bir yapı olsun. Yani elemanlar da Tuple olsun. Ve bu elemanlardan herbiri 2 elemanlı bir Tuple olacak.
+
+Fonksiyon, parametre olarak gelen Tuple'i sıralayacak ve sıralı bir Tuple dönecek.
+
+Sıralama kuralı, 2. eleman olacak. Yani içerideki Tuple'ların 2. elemanına bakıp ona göre sıralayacak.
+
+İpuçları:
+
+lambda fonksiyon kullanınız
+Parametre:
+tuple_of_tuples = (('a', 12), ('e', 8), ('b', 16), ('c', 22))
+
+Sonuc:
+[('e', 8), ('a', 12), ('b', 16), ('c', 22)]
+"""
+
+def tupleSirala(t1):
+
+    return sorted(t1, key = lambda x: x[1])
+
+tuple_of_tuples = (('a', 12), ('e', 8), ('b', 16), ('c', 22))
+#print(tupleSirala(tuple_of_tuples))

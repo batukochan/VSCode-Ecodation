@@ -258,7 +258,7 @@ sira = [1, 2, 3, 4, 5, 6, 7]
 gunlerSirasi = zip(sira, gunler)
 
 gunlerSozlugu = dict(gunlerSirasi)
-# print(gunlerSozlugu)
+print(gunlerSozlugu)
 
 # endregion
 

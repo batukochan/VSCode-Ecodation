@@ -239,7 +239,7 @@ aylarGunler = [
 
 aylarGunlerSozluk = dict(aylarGunler)
 
-# print(aylarGunlerSozluk)
+print(aylarGunlerSozluk)
 
 # endregion
 

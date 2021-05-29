@@ -14,7 +14,6 @@ boslukKarakterleri = string.whitespace
 # region okuma işlemi
 
 
-
 def dosyaCagir(kitapAdi):
     kitaYolu = "C:\\Users\\batuh\\Downloads\\" + kitapAdi + '.txt'
     return open(kitaYolu, encoding='utf-8')
@@ -42,12 +41,12 @@ def satirdekiKelimeler(satir):
     kelimeDizisi = satir.split()
     for kelime in kelimeDizisi:
         # eğer kelimede noktalamaişareti varsa atmalıyız.
-        
+
         kelime = kelime.strip(noktalamaİsaretleri)
         kelime = kelime.lower()
         if kelime.isalpha() and len(kelime) > 0:
             satirKelimeleri.append(kelime)
-    
+
     return satirKelimeleri
 
 
@@ -88,8 +87,67 @@ def kitapOku(kitapAdi: str):
 
     return kelimeler
 
+
 kitapAdi = "Pride_and_Prejudice"
 
 prideKelimeleri = kitapOku(kitapAdi)
 
-#print(prideKelimeleri[:20])
+# print(prideKelimeleri[:20])
+
+# KELİMELERİ UZUNLUK SIRASINA GÖRE DİZELİM.
+
+
+def listeleriSirala(liste, azalanMi):
+    # uzunluk ile sıralayacaksak -> key parametresini vermemiz lazım
+    return sorted(liste, reverse=azalanMi, key=lambda z: len(z))
+
+
+"""
+prideKelimeleri = listeleriSirala(prideKelimeleri,azalanMi=False)
+print(prideKelimeleri[:20]) # en kısa kelimeler (kısadan->uzuna)
+prideKelimeleri = listeleriSirala(prideKelimeleri,azalanMi=True)
+print(prideKelimeleri[:20])# en uzun kelimeler (uzundan->kısaya)
+"""
+
+
+def tekrarlariSil(liste: list):
+
+    kume = set(liste)
+
+    return list(kume)
+
+
+"""
+prideKelimeleriFarkli = tekrarlariSil(prideKelimeleri)
+
+print(prideKelimeleri[:20]) # en kısa kelimeler (kısadan->uzuna)
+"""
+
+
+def kelimeSayisi(liste: list):
+    return len(liste)
+
+
+"""
+prideKelimeleriSayisi = kelimeSayisi(prideKelimeleri)
+print(prideKelimeleriSayisi)
+"""
+
+# farklı kelime sayısı
+"""
+prideKelimeleriFarkli = tekrarlariSil(prideKelimeleri)
+prideKelimeleriFarkliSayisi = len(prideKelimeleriFarkli)
+print(prideKelimeleriFarkliSayisi)
+"""
+
+# Hangi kelime kaç kere geçiyor ?
+
+
+def enYuksekAdetli(liste: list, n=20):
+
+    # sözlük olarak dönecek
+    sozluk = {
+        kelime: liste.count(kelime)
+        for kelime in liste:
+            
+    }

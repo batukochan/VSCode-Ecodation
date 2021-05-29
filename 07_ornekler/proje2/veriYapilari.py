@@ -143,11 +143,37 @@ print(prideKelimeleriFarkliSayisi)
 # Hangi kelime kaç kere geçiyor ?
 
 
+def sozluksirala(sozluk: dict):
+
+    # value sırası
+    siraliListe = sorted(sozluk.items(), key = lambda x: x[1], reverse=True)
+    return siraliListe
+
+
 def enYuksekAdetli(liste: list, n=20):
 
     # sözlük olarak dönecek
     sozluk = {
         kelime: liste.count(kelime)
-        for kelime in liste:
-            
+        for kelime in liste
     }
+
+    siraliListe = sozluksirala(sozluk)
+    siraliListeTopn = siraliListe[:n]
+
+    return dict(siraliListeTopn)
+
+kitapAdi = "Alice_Adventures_in_Wonderland"
+"""
+aliceKelimeleri = kitapOku(kitapAdi)
+
+aliceKelimeAdetleri = enYuksekAdetli(aliceKelimeleri)
+print(aliceKelimeAdetleri)
+"""
+# doğrusu counter kullanmak
+"""
+prideKelimeAdetleri = Counter(prideKelimeleri).most_common(40) # en fazla geçen 40 kelime
+print(prideKelimeAdetleri)
+"""
+
+# endregion

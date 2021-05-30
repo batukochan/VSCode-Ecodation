@@ -473,4 +473,3 @@ def kopyalaTemizle(s1:set):
     kopyaKume = s1.copy()
     s1.clear()
     return kopyaKume
-

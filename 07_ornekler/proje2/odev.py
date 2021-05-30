@@ -246,14 +246,8 @@ aliceKelimeSayisiT = kelimeSayisi(aliceKelimeleriTekrarsiz)
 
 """
 Alıştırma 5:
-
-Şimdi herbir kelimenin kaç sefer geçtiğini bul.
-
-Önce kendin fonksiyonlar ve comprehension'lar yardımı ile yap.
-
-En yüksek adetli olan n (örneğin 20) kelime'yi almak istesen:
-"""
-
+Şimdi herbir kelimenin kaç sefer geçtiğini bul.Önce kendin fonksiyonlar ve comprehension'lar yardımı ile yap.
+En yüksek adetli olan n (örneğin 20) kelime'yi almak istesen:"""
 # en yüksek adetli n kelimeyi veren fonskyion
 
 def enYuksekAdetli(liste, n=20):
@@ -261,9 +255,8 @@ def enYuksekAdetli(liste, n=20):
     # sözlük olarak dönecek
     prideKelimeAdetleri = {
         kelime: liste.count(kelime)
-        for kelime in liste
-    }
-    
+        for kelime in liste}
+
     # bu sözlüğü sıralamamız lazım
     # bize sıralı liste olarak gelecek
     siraliListe = sozlukSirala(prideKelimeAdetleri)
@@ -291,9 +284,7 @@ aliceKelimeAdetleriF = enYuksekAdetli(aliceKelimeleri)
 
 """
 Sıralama yapıp en yüksek adetlileri aldık ama biraz zahmetli oldu.
-
 Daha kolay ve Pythonic bir yolu yok mu? Evet, var.
-
 Bunun için Python'un collections modülünden Count class'ını kullanacağız.
 """
 '''
@@ -304,17 +295,13 @@ aliceKelimeAdetleriB = Counter(aliceKelimeleri).most_common(20)
 '''
 """
 Bakın, birebir bizim comprehension'lar ile bulduğmuz sonuç.
-
 Ama veri tipinde bir fark var. Biz Dictionary olarak aldık, burada ise içinde Tuple'lar olan bir List dönmüş.
-
 Eğer dict tipine çevirmek istersek çok basit olarak cast yapabiliriz:
 """
-
 '''
 aliceKelimeAdetleriSozlugu = dict(aliceKelimeAdetleriB)
 #print(aliceKelimeAdetleriSozlugu)
 '''
-
 """
 # Pride and Prejudice'deki kelimeler ve sayıları
 # comprehension ile manuel yapsak onlarca dakika sürebilirdi.

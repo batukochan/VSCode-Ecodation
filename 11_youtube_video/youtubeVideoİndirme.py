@@ -1,6 +1,6 @@
 from pytube import YouTube
 
-url = 'https://www.youtube.com/watch?v=ZFsHrySUAwc'
+url = ''
 
 video = YouTube(url)
 """

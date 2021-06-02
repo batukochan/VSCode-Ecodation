@@ -78,4 +78,5 @@ def bolme():
         bolme()
     
 
-bolme()
+# bolme()
+

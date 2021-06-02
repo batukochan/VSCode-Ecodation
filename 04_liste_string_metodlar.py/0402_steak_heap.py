@@ -1,5 +1,5 @@
 ''' 
-Steak ve heap Ram'im ilgili alanıdır.
+Steak ve heap Ram'in ilgili alanıdır.
 Liste yapılarında atama yaptıktan sonra atama yapılan 
 listenin ve değişen listenin adresi aynı adrese kaydedilir.
 List tipi aslında referans tipidir ve bundan kaynaklı adres ile işlem yapılır.
@@ -44,5 +44,5 @@ kodların steak ve heap kısmındaki karşılığını 28-29. kod satırlarında
 [2,4] olur. Aynı adreste bulundukları için yapılan değişimler birbirlerini etkiler. print(list1)
 ifadesi döndürülürken 0XA2 adresine gidilir ve buradaki değer ekrana yazdırılır.
 ------------------------------------------------------------------------------------------------
-garbage collector [1,2] 0XA1' silecektir.
+garbage collector, [1,2] 0XA1 ifadesini silecektir.
 '''

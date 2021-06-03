@@ -307,8 +307,25 @@ try-except-else-finally yapısı kullanarak bu fonksiyonu yazın.
 
 # Çözüm 7:
 
+def birKarakterVer():
+    girdi = input("Lütfen bir karakter giriniz: ")
+    cikti = ' '
+    try:
+        int(girdi)
+    except:
+        # sayı değil
+        try:
+            assert girdi.isalpha()
+            cikti = girdi.upper()
+        except:
+            cikti = girdi
+    else:
+        cikti = pow(int(girdi),2)
+    finally:
+        print(cikti)
 
-# bir_karakter_ver()
+
+# birKarakterVer()
 
 # --------------------------------------------------------------------------------------#
 
@@ -326,10 +343,17 @@ try-except-else yapısı ile bu fonksiyonu yazın.
 
 # Çözüm 8:
 
+def indextekiEleman(liste,index):
+    try:
+        eleman = liste[index]
+    except IndexError as a:
+        raise
+    else:
+        return eleman
 
 # listem = ['x', 'y', 'z', 't']
-# ind = 7
-# sonuc = indexteki_eleman(listem, ind)
+# ind = 2
+# sonuc = indextekiEleman(listem, ind)
 # print(sonuc)
 
 # --------------------------------------------------------------------------------------#
@@ -356,6 +380,19 @@ FileNotFoundError: [Errno 2] No such file or directory: 'dizler.txt'
 
 
 # Çözüm 9:
+
+def dosyaOku(path):
+    try:
+        dosya = open(path)
+    except FileNotFoundError:
+        raise
+    else:
+        print(dosya.read())
+    finally:
+        try:
+            dosya.close()
+        except:
+            pass
 
 
 # olmayan bir dosya yolu ile çağıralım
@@ -398,7 +435,24 @@ Bilerek ve isteyerek sonsuz bir döngü kurun.
 
 # Çözüm 10:
 
+def diziler():
+    diziler = {
+    'Game of Thrones ': 8,
+    'Fargo': 4,
+    'Dark': 3,
+    'True Detective': 3,
+    'Dogs of Berlin': 1,
+    'The Crown': 6    
+}
+    while True:
+        try:
+            ad = input("Lütfen bir dizi adı giriniz: ")
+            yeniAd = ad.title()
+            print(f"{yeniAd} dizisinin sezon sayısı {diziler[yeniAd]}")
+        except:
+            print("Bu dizi yakında eklenecektir...")
+        else:
+            break
 
-# dizi_iskencesi()
-
+diziler()
 # --------------------------------------------------------------------------------------#

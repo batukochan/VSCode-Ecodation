@@ -1,7 +1,6 @@
 from pytube import YouTube
 
-url = ''
-
+url = 'https://www.youtube.com/watch?v=0Tty7XBq2Ko'
 video = YouTube(url)
 """
 print(video.title) # video başlığı

@@ -40,4 +40,3 @@ o1.not2 =int(input("Öğrenci not2: "))
 ortalama = (o1.not1 + o1.not2) / 2
 print(ortalama)
 
-

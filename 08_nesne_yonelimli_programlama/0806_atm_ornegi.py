@@ -78,3 +78,4 @@ atm1.ParaYatir(k1,1000)
 atm1.ParaCek(k1,1300)
 print(k1.BilgiVer())
 print(atm1.BilgiVer())
+

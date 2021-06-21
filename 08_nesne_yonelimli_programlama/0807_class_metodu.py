@@ -28,3 +28,4 @@ print(i1)
 
 for i in Insan.insanlar:
     print(i)
+

@@ -43,3 +43,4 @@ print(ogr1.BilgiVer())
 # if ogr1.sinif != "Ekonomi 101":
 #     print("bu sınıfta olamasın")
 # endregion
+

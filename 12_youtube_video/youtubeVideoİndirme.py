@@ -8,3 +8,4 @@ print(video.thumbnail_url) # küçük resim
 print(video.streams.get_highest_resolution())
 """
 video.streams.get_highest_resolution().download()
+

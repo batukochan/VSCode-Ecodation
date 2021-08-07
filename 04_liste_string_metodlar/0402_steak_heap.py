@@ -1,5 +1,5 @@
 ''' 
-Steak ve heap Ram'in ilgili alanıdır.
+Stack ve heap Ram'in ilgili alanıdır.
 Liste yapılarında atama yaptıktan sonra atama yapılan 
 listenin ve değişen listenin adresi aynı adrese kaydedilir.
 List tipi aslında referans tipidir ve bundan kaynaklı adres ile işlem yapılır.
@@ -12,18 +12,19 @@ list2[0]=2
 print(list1)
 
 '''
+
 ------------------------------------------------------------------------------------------------
-|                                        STEAK & HEAP                                          |
+|                                        STACK & HEAP                                          |
 ------------------------------------------------------------------------------------------------
 |            Sayısal Veri Tipler               |                Object Veri Tipleri            |
 ------------------------------------------------------------------------------------------------                                 
-| +int, float, boolean, valueType              | + List, string,object                         |
+| +int, float, boolean, valueType              | + List, string, object                        |
 |                                              | + Referans tipleri                            |
 ------------------------------------------------------------------------------------------------
-|                   STEAK                     LIST                  HEAP                       |
+|                   STACK                     LIST                  HEAP                       |
 ------------------------------------------------------------------------------------------------
-    Adresler steak kısmında değerler heap kısmında saklanır.Bu durumda 8. ve 9. satırda işlenen 
-kodların steak ve heap kısmındaki karşılığını 28-29. kod satırlarında betimlemeye çalışabiliriz.
+  Adresler stack kısmında, değerler heap kısmında saklanır. Bu durumda 8. ve 9. satırda işlenen 
+kodların stack ve heap kısmındaki karşılığını 28-29. kod satırlarında betimlemeye çalışabiliriz.
 ------------------------------------------------------------------------------------------------
 | list1 = 0XA1                                 | [1,2] 0XA1                                    |
 | list2 = 0XA2                                 | [3,4] 0XA2                                    |
@@ -45,4 +46,6 @@ kodların steak ve heap kısmındaki karşılığını 28-29. kod satırlarında
 ifadesi döndürülürken 0XA2 adresine gidilir ve buradaki değer ekrana yazdırılır.
 ------------------------------------------------------------------------------------------------
 garbage collector, [1,2] 0XA1 ifadesini silecektir.
+
+
 '''
